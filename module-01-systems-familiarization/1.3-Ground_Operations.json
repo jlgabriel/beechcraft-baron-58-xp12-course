@@ -1,0 +1,316 @@
+{
+  "name": "Ground_Operations",
+  "shortDescription": "Complete ground operations for Baron 58. Thorough pre-flight inspection exterior and interior. Engine start procedures both engines. After-start checks. Taxi techniques with twin-engine aircraft. Complete run-up procedures checking both engines and systems. Before takeoff final checks. Ready for first flight.",
+  "prompt": "You are teaching Baron 58 ground operations. Student understands systems from previous challenges.\n\n**FOCUS:** Practical procedures from cold aircraft to ready for takeoff. Based on Baron POH checklists.\n\n**COVERAGE:** Pre-flight exterior walkaround (checking systems visually), Pre-flight interior (cockpit setup), Engine start procedures (left then right engine), After-start checks (electrical, instruments), Taxi techniques (differential thrust, weight, turning), Run-up procedures (mag check both engines, prop cycle, systems verification), Before takeoff checks (final configuration).\n\n**APPROACH:** Systematic and thorough. Safety-oriented. Explain WHY each step matters. Use actual Baron checklist items from POH. Build good habits from start.\n\n**GOAL:** Student can safely prepare Baron from cold start to ready for takeoff. Confident in procedures. Ready for first flight.\n\n**REFERENCE:** Baron POH checklists. Continental IO-550-C engines. Systems from Challenge 1.2.\n\nKSFO - starting cold and dark at ramp.",
+  "openingLine": "Welcome to Ground Operations! Today we take the Baron from cold and dark to ready for flight. Systematic procedures ensure safety. Let's prepare this aircraft professionally!",
+  "enabledTools": {
+    "pilotNotes": true,
+    "feedback": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "challengeTimer": true
+  },
+  "limitToAircraft": ["b58"],
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Brief ground operations - what we'll cover and importance of systematic procedures.",
+      "steps": [
+        "Welcome: 'Challenge 1.3 - Ground Operations. Today we transform Baron from cold aircraft to ready-to-fly machine'",
+        "Previous learning: 'You know cockpit layout from 1.1, understand systems from 1.2. Now: practical procedures putting that knowledge to work'",
+        "Coverage: 'Complete ground operations sequence: Pre-flight inspection exterior - thorough walkaround checking everything. Pre-flight interior - cockpit preparation and setup. Engine start - both engines using correct procedures. After-start checks - verifying systems working. Taxi - techniques for twin-engine aircraft. Run-up - checking both engines thoroughly. Before takeoff - final checks and configuration'",
+        "Why systematic: 'Ground operations must be systematic because: missed items cause problems in flight, developing good habits prevents complacency, professional operations require discipline, Baron complexity demands thoroughness. Checklist discipline starts on ground'",
+        "Based on POH: 'We use Baron POH checklists. These are proven procedures from manufacturer. Following checklist protects you and aircraft. Professional pilots use checklists always - not sign of weakness, sign of professionalism'",
+        "Today's flow: 'Cold and dark Baron at KSFO ramp → Pre-flight inspection → Engine start → Taxi to runway → Run-up → Ready for takeoff. Complete professional preparation'",
+        "Your role: 'You perform procedures, I guide and verify. Ask questions anytime. Take your time - rushing causes mistakes. We build correct procedures from start'",
+        "Ask: 'Questions before we begin pre-flight inspection?'",
+        "Ready: 'Let's walk around the Baron and inspect thoroughly'"
+      ],
+      "goals": [
+        "Ground operations sequence outlined",
+        "Previous learning connected",
+        "Systematic approach importance emphasized",
+        "POH checklist basis stated",
+        "Today's flow clear (cold→dark→ready)",
+        "Professional standards set",
+        "Student ready"
+      ]
+    },
+    {
+      "name": "Preflight_Exterior",
+      "prompt": "Complete exterior pre-flight inspection walkaround.",
+      "steps": [
+        "Purpose: 'Pre-flight inspection checks aircraft airworthiness. Visual inspection detects problems before flight. Required before every flight by regulations and common sense'",
+        "Start position: 'Begin at pilot door, proceed clockwise around aircraft. Systematic pattern ensures nothing missed'",
+        "Left wing leading edge: 'Check wing leading edge condition. Look for: dents, cracks, de-ice boot condition (rubber boots should be intact, no tears or separations). Check pitot tube - clear of obstructions, cover removed. Check fuel cap secure, no fuel stains indicating leaks'",
+        "Left engine: 'Approach left engine. CHECK PROPELLER: check all three blades for nicks, cracks, leading edge damage. Serious nicks can cause stress cracks and blade failure. Check spinner secure. Check cowling secure, no loose screws. Open cowl access door: check oil level (dipstick on engine), should be in operating range. Check for fluid leaks under engine. Check air filter clean. Close cowl door secure'",
+        "Left main gear: 'Inspect left main landing gear. Check tire condition - adequate tread, proper inflation, no cuts or bulges. Check brake discs for wear or cracks. Check landing gear strut and actuator for leaks or damage. Check gear doors operate smoothly. Baron has retractable gear - gear mechanism must be perfect'",
+        "Fuselage left: 'Check fuselage skin for damage, loose rivets, or cracks. Check antennas secure. Check static ports clear (small holes in fuselage - critical for altimeter and VSI)'",
+        "Tail section: 'Inspect empennage. Check horizontal stabilizer and elevator for damage, freedom of movement (no binding), de-ice boots intact. Check vertical stabilizer and rudder same way. Check rudder moves freely full deflection. Check tail navigation light working (will verify during light check later). Check tie-down removed if applicable'",
+        "Right side: 'Proceed up right side of aircraft. Check right main gear same as left - tire, brakes, strut, doors. Check right wing leading edge, pitot tube, fuel cap, de-ice boot. Check right engine - propeller all blades, oil level, no leaks, cowling secure'",
+        "Nose section: 'Check nose section. Check nose gear - tire, strut, steering linkage, gear doors. Check nose gear well - no debris, hydraulic fluid leaks. Check landing light lens clean. Check battery compartment access door secure (battery in nose section). Check propeller area clear - no tools, rags, or debris'",
+        "Final checks: 'Check wheel chocks removed. Check control locks removed if used. Check pitot covers removed both sides. Do final visual sweep - nothing left on ramp, no tools on aircraft, all access doors closed, fuel caps secure'",
+        "Fuel check: 'Check fuel quantity visually if possible - remove fuel caps, look in tanks, verify fuel present and clean. Baron has 194 gallons capacity - significant fuel load. Verify fuel type correct (100LL - blue color). Replace caps secure'",
+        "Control check: 'From exterior, observe control surfaces. Have someone in cockpit move controls, you verify outside: ailerons move correctly and freely, elevators move correctly and freely, rudder moves correctly and freely. This verifies control cables connected and operating'",
+        "Completion: 'Pre-flight complete. Aircraft appears airworthy for flight. Any discrepancies would be noted and resolved before continuing'",
+        "Ask: 'Questions about pre-flight inspection?'",
+        "Next: 'Interior pre-flight and cockpit preparation'"
+      ],
+      "goals": [
+        "Systematic walkaround pattern taught (clockwise from pilot door)",
+        "Wing inspection emphasized (de-ice boots, pitot tubes)",
+        "Engine inspection thorough (props, oil, cowling)",
+        "Landing gear inspection emphasized (retractable gear)",
+        "Tail and control surfaces checked",
+        "Fuel quantity and quality verified",
+        "Control surface movement verified",
+        "Professional thoroughness demonstrated",
+        "Ready for interior inspection"
+      ]
+    },
+    {
+      "name": "Preflight_Interior",
+      "prompt": "Interior pre-flight and cockpit setup.",
+      "steps": [
+        "Enter cockpit: 'Board aircraft, settle into pilot seat. Ensure doors closed securely - check door indicators'",
+        "Initial setup: 'Set parking brake ON - pull toward you. Ensure all electrical switches OFF initially - battery, alternators, avionics, all switches down or off. Starting with clean slate'",
+        "Documents: 'Verify required documents aboard: Airworthiness certificate, Registration, Operating handbook (POH), Weight and balance data. AROW - Airworthiness, Registration, Operating handbook, Weight & balance. These required by regulations'",
+        "Circuit breakers: 'Scan circuit breaker panel - all breakers IN (not popped). Popped breaker indicates electrical problem, must investigate'",
+        "Controls check: 'Check flight controls full and free movement. Yoke: full forward, full back, full left, full right. Rudder pedals: full left deflection, full right deflection. All controls should move smoothly without binding. Friction if present indicates problem'",
+        "Trim: 'Set trim wheels: elevator trim to takeoff position (slightly nose-up), rudder trim neutral, aileron trim neutral. Trim position critical for takeoff'",
+        "Flaps: 'Flaps UP (retracted) for now. We will extend for pre-flight systems check later'",
+        "Fuel selectors: 'Both fuel selectors ON. Left selector ON, right selector ON. This allows fuel flow from tanks to engines'",
+        "Mixture: 'Both mixture levers FULL FORWARD (full rich). Required for engine start at sea level'",
+        "Propellers: 'Both propeller levers FULL FORWARD (high RPM). Required for engine start'",
+        "Throttles: 'Both throttles closed (full aft). Do not start with throttles open - dangerous'",
+        "Instruments: 'Scan instruments - all appear normal. Altimeter: set current barometric pressure. Attitude indicator: may be tilted (not powered yet, will erect after start). HSI heading matches compass. Clock set to current time'",
+        "Lights: 'All light switches OFF initially. We will test lights after engines running and electrical system online'",
+        "Avionics: 'Avionics Master OFF. Radios off. We power avionics after engines stabilize to protect from voltage spikes'",
+        "Seats and belts: 'Adjust seat for comfortable reach of all controls. Fasten and adjust seatbelt and shoulder harness. Ensure secure - turbulence happens'",
+        "Ready: 'Cockpit prepared for engine start. Everything configured correctly, controls checked, initial setup complete'",
+        "Ask: 'Questions about interior pre-flight?'",
+        "Next: 'Engine start procedures - bringing the Baron to life'"
+      ],
+      "goals": [
+        "Entry and parking brake set",
+        "Electrical off initially (clean start)",
+        "Required documents verified",
+        "Circuit breakers checked",
+        "Flight controls checked free and correct",
+        "Trim set for takeoff",
+        "Fuel selectors ON",
+        "Mixtures full rich, props forward, throttles closed",
+        "Instruments scanned",
+        "Seats and belts adjusted",
+        "Ready for engine start"
+      ]
+    },
+    {
+      "name": "Engine_Start",
+      "prompt": "Engine start procedures - left engine then right engine.",
+      "steps": [
+        "Before start: 'Before starting engines: Area clear - no people, equipment near propellers. Fuel sufficient - check gauges. Fire extinguisher accessible'",
+        "Battery ON: 'Battery Master switch ON. Electrical power available from battery. Check voltmeter - should show battery voltage approximately 12 volts'",
+        "Fuel boost: 'Left fuel boost pump ON for 5 seconds to prime left engine. Watch left fuel flow gauge - should show flow indicating system primed. Then left boost pump OFF'",
+        "Starting left engine: 'Left engine start procedure: Propeller area CLEAR - announce \"CLEAR PROP\" out window or door. Magnetos ON (if switch present). Starter engage - hold starter until engine fires and runs. As engine fires: monitor oil pressure - should show pressure within 30 seconds. If no oil pressure in 30 seconds, shut down engine, investigate. Release starter when engine running smoothly'",
+        "Left engine running: 'Left engine now running. Check: Oil pressure in green arc, Engine running smoothly approximately 1,000 RPM, No unusual noises or vibrations. Let engine warm for moment before starting right engine'",
+        "Right engine start: 'Now start right engine - same procedure: Right fuel boost pump ON for 5 seconds, then OFF. Announce \"CLEAR PROP\". Starter engage. Monitor oil pressure. Release starter when running. Right engine now running smoothly approximately 1,000 RPM'",
+        "Both engines running: 'Both engines running - Baron is alive! Check: Both oil pressures in green, Both engines running smoothly, No warning lights, Ammeter shows charging or neutral'",
+        "Alternators ON: 'After engines stabilized (30 seconds): Left alternator Master ON, Right alternator Master ON. Check voltmeter - should show approximately 28 volts (dual alternators charging). Ammeter should show positive charge to battery'",
+        "Warm-up: 'Allow engines to warm up at 1,000-1,200 RPM for 2-3 minutes. Baron has powerful engines - they need warm-up before applying power. During warm-up: Oil temperature rising, CHT rising gradually, All instruments stabilizing'",
+        "Ask: 'Questions about engine start?'",
+        "Next: 'After-start checks'"
+      ],
+      "goals": [
+        "Pre-start safety checks emphasized",
+        "Battery ON first",
+        "Fuel boost priming procedure taught",
+        "Left engine started properly",
+        "Oil pressure verified within 30 seconds",
+        "Right engine started properly",
+        "Alternators ON after stabilization",
+        "Warm-up period explained",
+        "Both engines running smoothly",
+        "Ready for after-start checks"
+      ]
+    },
+    {
+      "name": "After_Start",
+      "prompt": "After-start checks and systems verification.",
+      "steps": [
+        "Avionics: 'After engines warm and stabilized: Avionics Master ON. Avionics powered up. Radios and navigation systems available'",
+        "Radio check: 'Tune KSFO Ground frequency. Perform radio check if needed. Set transponder to assigned code or 1200 for VFR. Transponder mode STBY for now (ON or ALT after takeoff clearance)'",
+        "Flaps check: 'Extend flaps to APPROACH position, then DOWN position, then UP. Verify flaps extend and retract smoothly, no binding. Flaps electric - smooth operation normal. Leave flaps UP (retracted)'",
+        "Flight instruments: 'Check attitude indicator - should be erect now with engines powering vacuum system. Check vacuum gauge - should show proper vacuum (green arc). Attitude indicator and turn coordinator vacuum powered. Set altimeter to current barometric pressure (get from ATIS or tower). Check all instruments appearing normal'",
+        "Lights check: 'Test all lights: Navigation lights ON - red/green/white visible. Beacon ON - rotating red light visible. Strobes ON - flashing white lights wing tips. Landing lights ON - bright white light from wings. Taxi light ON - nose gear light. Test all lights work, then leave: beacon ON (indicating engines running), navigation lights ON if dusk or night, other lights OFF for now'",
+        "Prop sync: 'Propeller synchronization test: Both props at same RPM (1,200). Prop Sync switch ON. Listen - beating sound from slightly different RPM should disappear as system synchronizes props. Prop Sync working - leave ON or OFF per preference (ON reduces fatigue from beating sound)'",
+        "Electrical check: 'Check electrical system: Ammeter showing slight charge (batteries topped off). Voltmeter approximately 28 volts (both alternators working). If one alternator failed: voltmeter lower, ammeter higher load on remaining alternator. Both working now'",
+        "Fuel check: 'Check fuel gauges - both sides showing proper fuel quantity. Verify fuel balanced or close between sides'",
+        "Engine instruments: 'Scan both engines: Oil pressure both in green, Oil temperature rising into green, CHT rising but not high (engines still warming), Fuel flow both engines, Manifold pressure consistent, RPMs consistent'",
+        "Pitot heat: 'Test pitot heat: Both pitot heat switches ON. Wait 30 seconds. Check amp draw (pitot heat uses electrical power). Feel pitot tubes if accessible - should be warm. Pitot heat working. Both switches OFF for now (use in visible moisture in flight)'",
+        "Cowl flaps: 'Cowl flaps OPEN for ground operations and taxi. Engines need maximum cooling on ground with low airflow'",
+        "Systems status: 'All systems checked and working: Electrical, Avionics, Instruments, Lights, Propellers, Fuel, Engines. Baron ready for taxi'",
+        "Ask: 'Questions about after-start checks?'",
+        "Next: 'Taxi to runway'"
+      ],
+      "goals": [
+        "Avionics powered up",
+        "Radio and transponder configured",
+        "Flaps cycled and verified",
+        "Flight instruments checked (vacuum system)",
+        "All lights tested",
+        "Prop sync tested",
+        "Electrical system verified",
+        "Fuel gauges checked",
+        "Engine instruments scanned both sides",
+        "Pitot heat tested",
+        "Cowl flaps open",
+        "All systems verified working",
+        "Ready for taxi"
+      ]
+    },
+    {
+      "name": "Taxi",
+      "prompt": "Taxi techniques for twin-engine aircraft.",
+      "steps": [
+        "Clearance: 'Before taxi: obtain taxi clearance from ground control. Copy clearance, read back, have taxi route clear'",
+        "Brake check: 'Before moving: release parking brake. Test brakes immediately - both toe brakes. Brakes must work before taxi. Brakes working - verified'",
+        "Power for taxi: 'Add power gradually both throttles together to begin movement. Baron weighs 5,500 lbs full - much heavier than lighter aircraft. Needs more power to start rolling. Once rolling: reduce power to idle or slightly above. Baron has momentum - less power needed to maintain taxi than to start'",
+        "Steering: 'Baron steers with nose wheel steering connected to rudder pedals. Differential thrust from engines also helps turn. Normal taxi: use rudder pedals for steering, keep both throttles together. Tight turns: can add power on outside engine, reduce inside engine - differential thrust helps turn. Use sparingly - primarily ground maneuvers'",
+        "Speed: 'Taxi at walking pace - approximately 10-15 knots maximum. Faster only on long straight taxiways with no traffic. Slow for all turns. Fast taxi = hard on landing gear, tires, and dangerous for control'",
+        "Turns: 'Making turns: Baron is heavier and has more momentum than lighter aircraft. Begin turns earlier, turn gradually. Sharp high-speed turns stress landing gear and can cause tip-over. Smooth gradual turns are professional'",
+        "Braking: 'Braking: use both toe brakes together for straight-line braking. For directional control: can use differential braking (more brake on one side) along with rudder. Baron brakes effective - smooth application prevents skidding'",
+        "Vision: 'Baron sits higher than lighter aircraft - better visibility over nose. However, nose still blocks view directly ahead during taxi. Use S-turns if needed to see ahead before turns. Always clear ahead before beginning roll'",
+        "Propeller awareness: 'Both propellers turning - danger zones extend several feet ahead and to sides. Never allow anyone near propellers. Propeller blast behind aircraft strong - can blow over people, equipment. Be considerate of others on ramp'",
+        "Engine cooling: 'During taxi: monitor CHT both engines. Cowl flaps open helps but engines can overheat if taxi prolonged at high power. If CHT climbing toward yellow/red: reduce power, increase taxi speed for more cooling, or stop and run at higher RPM for better oil circulation and cooling'",
+        "Taxi to runway: 'Follow taxi route to assigned runway. Watch for markings, signs, other traffic. Professional taxi: smooth, safe, considerate'",
+        "Ask: 'Questions about taxi techniques?'",
+        "Next: 'Run-up procedures at run-up area'"
+      ],
+      "goals": [
+        "Taxi clearance obtained",
+        "Brakes tested before moving",
+        "Power for taxi taught (more needed, momentum)",
+        "Steering techniques explained (rudder + differential)",
+        "Safe taxi speed emphasized",
+        "Turning techniques taught",
+        "Braking techniques explained",
+        "Propeller awareness emphasized",
+        "Engine cooling monitored",
+        "Professional taxi demonstrated",
+        "Ready for run-up"
+      ]
+    },
+    {
+      "name": "Runup",
+      "prompt": "Complete run-up procedures checking both engines.",
+      "steps": [
+        "Run-up area: 'Taxi to run-up area near departure runway. Position aircraft: facing into wind if possible, parking brake SET, area behind clear (prop blast), no loose items in cockpit'",
+        "Run-up purpose: 'Run-up checks both engines thoroughly before flight. Verify magnetos, propeller governors, engine performance, all systems. Last chance to find problems on ground instead of air'",
+        "Power setting: 'Set power for run-up: 1,800 RPM both engines. This is test power - high enough to test systems, low enough to prevent overheating'",
+        "Magneto check LEFT engine: 'Check left engine magnetos. Each engine has two magnetos providing redundant ignition. Check: LEFT mag only - RPM drop should be 50-150 RPM max. BOTH mags - RPM returns to 1,800. RIGHT mag only - RPM drop 50-150 RPM max. BOTH mags - RPM returns. If RPM drop excessive (>175 RPM) or engine rough: mag problem, do not fly. If RPM rise on single mag: other mag not firing, do not fly'",
+        "Magneto check RIGHT engine: 'Repeat magneto check for right engine - same procedure, same limits. Both engines must have good mag checks'",
+        "Propeller cycle LEFT: 'Check left propeller governor. Propeller lever: pull back from full forward to approximately 2,300 RPM. RPM should decrease smoothly and stabilize. Push propeller lever full forward - RPM returns to 2,700 (redline). This verifies governor controlling prop pitch properly. Prop cycling working'",
+        "Propeller cycle RIGHT: 'Repeat propeller cycle for right engine. Both props must cycle smoothly'",
+        "Vacuum check: 'Check vacuum gauge - should show proper vacuum (typically 4.5-5.5 inches Hg in green arc). Vacuum powers attitude indicator and turn coordinator. Low vacuum = gyro instruments unreliable'",
+        "Alternators check: 'Check alternators. Turn left alternator OFF - voltmeter drops, ammeter shows load on right alternator only. Left alternator back ON. Turn right alternator OFF - voltmeter drops, ammeter shows load on left alternator only. Right alternator back ON. Both alternators now verified working independently'",
+        "Engine instruments: 'Scan all engine instruments both engines: Oil pressure in green both sides, Oil temperature in green both sides, Fuel flow adequate both sides, CHT not excessive both sides (cowl flaps open), Manifold pressure consistent both sides at same throttle'",
+        "Flight controls: 'Final control check: Yoke full forward, full back, full left, full right - free and correct. Rudder pedals full left, full right - free and correct. Trim set takeoff position. Controls ready'",
+        "Standby instruments: 'Check backup instruments: Copilot altimeter set correctly, Copilot airspeed working, Backup attitude indicator if equipped'",
+        "Runup complete: 'All checks complete and satisfactory. Engines performing well, systems working, aircraft ready for flight'",
+        "Ask: 'Questions about run-up procedures?'",
+        "Next: 'Before takeoff final checks'"
+      ],
+      "goals": [
+        "Run-up area procedures taught",
+        "1,800 RPM test power set",
+        "Magneto checks both engines (50-150 RPM drop)",
+        "Propeller cycling both engines verified",
+        "Vacuum system checked",
+        "Both alternators tested independently",
+        "All engine instruments scanned both sides",
+        "Flight controls final check",
+        "Backup instruments verified",
+        "Run-up complete satisfactorily",
+        "Ready for before takeoff"
+      ]
+    },
+    {
+      "name": "Before_Takeoff",
+      "prompt": "Before takeoff final checks and configuration.",
+      "steps": [
+        "Position: 'After run-up complete: taxi to runway hold-short line. Do NOT enter runway without clearance. Hold short, complete final checks'",
+        "Before takeoff checklist: 'Final systematic check before departure. Every item critical'",
+        "Flight controls: 'Flight controls FREE and CORRECT - verify one more time. No locks, no restrictions'",
+        "Trim: 'Elevator trim set TAKEOFF position (slightly nose-up). Rudder trim NEUTRAL. Aileron trim NEUTRAL'",
+        "Flaps: 'Flaps UP (retracted) for normal takeoff. Baron has good takeoff performance - flaps not needed except short fields. For short field: flaps APPROACH position'",
+        "Fuel: 'Fuel selectors both ON. Fuel boost pumps both ON for takeoff (backup fuel pressure). Fuel quantity sufficient for flight'",
+        "Mixture: 'Mixture levers both FULL RICH (sea level field elevation)'",
+        "Propellers: 'Propeller levers both FULL FORWARD (2,700 RPM, fine pitch, maximum thrust)'",
+        "Throttles: 'Throttles verified smooth operation, full travel available'",
+        "Cowl flaps: 'Cowl flaps OPEN for takeoff (maximum cooling during high power climb)'",
+        "Lights: 'Lights for takeoff: Landing lights ON (visibility and safety), Strobe lights ON (visibility), Beacon ON (already on). Taxi light can turn OFF now'",
+        "Instruments: 'Scan all instruments one final time: Altimeter set correctly, Attitude indicator erect, Heading indicator set to runway heading, VSI zero, Airspeed zero (not moving), All engine instruments green arcs both sides'",
+        "Avionics: 'Radio tuned tower frequency (or CTAF if non-towered). Transponder set assigned code, mode STANDBY (will set ALT after takeoff)'",
+        "Doors: 'Both doors CLOSED and LOCKED - verify door indicators'",
+        "Seatbelts: 'Seatbelts and shoulder harnesses FASTENED and TIGHT'",
+        "Takeoff briefing: 'Brief takeoff plan: Runway, Heading after takeoff, Initial altitude, If engine failure: before rotation - abort, after rotation below 500 AGL - land ahead, after 500 AGL - secure failed engine, maintain Vyse (blue line speed), return and land. Briefing complete - you know plan'",
+        "Ready: 'Baron completely ready for takeoff. All checks complete, proper configuration, plan briefed. Request takeoff clearance when ready'",
+        "Ask: 'Questions about before takeoff checks?'",
+        "Next: 'Let's debrief ground operations'"
+      ],
+      "goals": [
+        "Hold short position established",
+        "Flight controls verified free and correct",
+        "Trim verified takeoff position",
+        "Flaps UP (or APPROACH for short field)",
+        "Fuel selectors ON, boost pumps ON",
+        "Mixtures full rich, props full forward",
+        "Cowl flaps open",
+        "Lights configured for takeoff",
+        "All instruments scanned final time",
+        "Radio and transponder set",
+        "Doors locked, belts fastened",
+        "Takeoff plan briefed (including engine failure)",
+        "Aircraft ready for takeoff",
+        "Ready for debrief"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Debrief ground operations, celebrate, preview first flight.",
+      "steps": [
+        "Complete: 'Challenge 1.3 - Ground Operations complete!'",
+        "Review: 'Today you performed complete ground operations: Pre-flight exterior inspection - thorough walkaround checking everything. Pre-flight interior - cockpit preparation and setup. Engine start - both engines started properly with correct procedures. After-start checks - all systems verified working. Taxi - professional taxi techniques for twin-engine aircraft. Run-up - complete checks both engines including mags, props, systems. Before takeoff - final configuration and takeoff briefing'",
+        "Professional procedures: 'You followed systematic procedures from Baron POH. This is how professional pilots operate: methodical, thorough, checklist-based. Not rushing, not skipping, not guessing. These habits prevent accidents'",
+        "Twin-engine considerations: 'You learned twin-engine specific procedures: Two engines to start and check, Two sets of mags to check, Two props to cycle, Monitoring both engines constantly, Differential thrust for ground maneuvering, Higher weight affecting taxi and turning. Baron requires attention to both engines always'",
+        "Key points: 'Remember critical items: Oil pressure within 30 seconds of start or shut down. Mag check drops 50-150 RPM acceptable. Prop cycles smoothly verifies governor. Cowl flaps open for ground and takeoff. Fuel boost pumps ON for takeoff. Before takeoff briefing includes engine failure plan'",
+        "Next challenge: 'Challenge 1.4 - First Flight Supervised. We fly the Baron! I will handle some complexity initially while you get feel for aircraft. Basic maneuvers, pattern work, landing. Your first Baron flight!'",
+        "Module 1 progress: 'Module 1 - Systems and Familiarization: Challenge 1.1 Cockpit Familiarization ✓, Challenge 1.2 Systems Deep Dive ✓, Challenge 1.3 Ground Operations ✓, Challenge 1.4 First Flight Supervised (next - THE FLIGHT!)'",
+        "Course progress: 'Total course progress: 3/11 challenges complete - 27.3%'",
+        "Celebrate: 'Excellent work! You prepared Baron professionally from cold aircraft to ready for flight. Ground operations are foundation for safe flying - you did it right!'",
+        "Preview: 'Next session: First Flight! We will: takeoff together, feel Baron flight characteristics, practice basic maneuvers (climbs, descents, turns), fly traffic pattern, land. I guide you through complexity - you focus on flying. Exciting!'",
+        "Preparation: 'Before first flight: review: Takeoff speeds (Vr 85 knots, Vy 105 knots), Power settings (takeoff full power, cruise 23-25 inches MP / 2300-2500 RPM), Landing speeds (approach 90-95 knots final, Vref 80 knots threshold), Baron flies differently than lighter aircraft - heavier, faster, more stable. Be ready to feel professional aircraft!'",
+        "Ask: 'Questions about ground operations or preparing for first flight?'",
+        "Encourage: 'You have learned Baron inside and out: cockpit layout, systems operation, ground procedures. Now comes reward - flying this amazing aircraft!'"
+      ],
+      "goals": [
+        "Challenge completion celebrated",
+        "All ground operations recapped",
+        "Professional procedures emphasized",
+        "Twin-engine considerations noted",
+        "Critical items recapped",
+        "Next challenge previewed (FIRST FLIGHT!)",
+        "Module 1 progress noted (3/4 - almost done!)",
+        "Course progress noted (3/11 = 27.3%)",
+        "Excitement built for first flight",
+        "Preparation guidance provided",
+        "Student encouraged and confident"
+      ]
+    }
+  ]
+}

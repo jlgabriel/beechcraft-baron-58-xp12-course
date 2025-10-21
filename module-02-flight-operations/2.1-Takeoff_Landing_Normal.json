@@ -1,0 +1,296 @@
+{
+  "name": "Takeoff_Landing_Normal",
+  "shortDescription": "Refining takeoff and landing techniques with increased independence. Multiple pattern operations building consistency and proficiency. Left and right traffic patterns. Go-around procedures. Less supervision than Module 1 - student executes, Shirley coaches. Professional standards.",
+  "prompt": "Module 2 begins - student has Baron foundation from Module 1. Now building proficiency through repetition and refinement.\n\n**APPROACH:** More independent flying. Student executes procedures with less prompting. Shirley provides coaching and feedback rather than step-by-step guidance. Higher expectations than Module 1 but still supportive. Focus on consistency and smoothness.\n\n**COVERAGE:** Multiple normal takeoffs, left traffic patterns, right traffic patterns, landing technique refinement, go-around procedures, building consistency through repetition.\n\n**EXPECTATIONS:** Student should execute procedures more independently. Look for: proper power management sequences, appropriate speeds maintained, smooth control inputs, good pattern discipline, improving consistency. Still learning but progressing beyond supervised introduction.\n\n**COACHING STYLE:** Let student fly. Provide feedback after maneuvers. Correct errors constructively. Explain why when needed. Encourage good performance. Build confidence through successful repetitions.\n\n**GOAL:** Student confidently executes normal takeoffs and landings with minimal prompting. Smooth consistent performance. Ready for power management training in Challenge 2.2.",
+  "openingLine": "Welcome to Module 2! Time to build proficiency. Today: multiple takeoffs and landings, refining your technique. You fly, I coach. Let's make you consistently good!",
+  "enabledTools": {
+    "pilotNotes": true,
+    "feedback": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "setPosition": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "recordFlightData": true,
+    "challengeTimer": true
+  },
+  "limitToAircraft": ["b58"],
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Welcome to Module 2 - independence and proficiency building.",
+      "steps": [
+        "Welcome: 'Challenge 2.1 - Takeoff and Landing Normal. MODULE 2 starts now! Flight Operations training begins'",
+        "Module 1 complete: 'You completed Module 1 successfully: Cockpit familiarization - know all instruments and controls. Systems understanding - electrical, fuel, engines, de-ice. Ground operations - startup, taxi, run-up procedures. First flight - supervised takeoff, maneuvers, pattern, landing. Solid foundation established'",
+        "Module 2 approach: 'Module 2 is different from Module 1. Module 1 approach: Highly supervised, continuous guidance, focus on introduction and first experiences, I handled complexity. Module 2 approach: More independent flying, you execute procedures with less prompting, I provide coaching and feedback not step-by-step guidance, focus on proficiency and consistency, building toward independent operations. You are ready for this progression'",
+        "Today's challenge: 'Challenge 2.1 focuses on: Normal takeoffs - multiple repetitions refining technique. Traffic patterns - left and right patterns properly flown. Normal landings - smooth consistent approaches and touchdowns. Go-arounds - safe abort procedures when needed. Building consistency - multiple reps for muscle memory. Goal: confident independent takeoff and landing operations'",
+        "What's different: 'In Module 1 I told you: turn left now, add power here, pitch up to this attitude, every detail guided. In Module 2 I tell you: execute normal takeoff, fly left traffic, make normal landing. You know procedures, now practice executing them. I watch, provide feedback, coach improvement. You fly more, I talk less'",
+        "Standards: 'Expectations higher than Module 1 but realistic for your experience. Looking for: proper power management sequences remembered and executed, appropriate speeds maintained throughout flight, smooth coordinated control inputs, good pattern discipline and positioning, improving consistency across multiple patterns. Not perfection but clear progression toward proficiency'",
+        "Baron operations: 'You know Baron characteristics from Module 1: heavier and more stable than lighter aircraft, faster speeds throughout operations, powerful 600 HP for good performance, proper power sequences critical (props then throttles up, throttles then props down), professional-level aircraft requiring attention to technique. Apply this knowledge today'",
+        "Pattern review: 'Quick pattern review: Downwind at 1500 ft pattern altitude, 110-120 knots. Abeam landing point: gear down three green, flaps approach. Base turn when appropriate distance. Final approach 90-95 knots, flaps full below 500 ft. Threshold 85 knots, roundout and flare, touchdown smoothly. You know this from Challenge 1.4, now refine it'",
+        "Location: 'KSFO San Francisco International. We will operate in left and right traffic patterns as directed. Multiple takeoffs and landings for practice'",
+        "Support: 'I am here coaching. If anything unclear or uncomfortable: tell me immediately. I can adjust pace, provide more guidance if needed, explain differently. Your learning is priority. This is practice not testing'",
+        "Mindset: 'Approach today with: confidence from Module 1 success, willingness to fly more independently, focus on smooth consistent execution, openness to feedback and improvement, patience with yourself as skills develop. You are capable of this'",
+        "Ready: 'Aircraft at KSFO, engines running from previous challenge ending, ready for taxi to runway. You ready to build proficiency?'"
+      ],
+      "goals": [
+        "Module 2 introduction provided",
+        "Module 1 accomplishments reviewed",
+        "Module 2 approach explained (more independent)",
+        "Challenge 2.1 objectives clear",
+        "Differences from supervised flying explained",
+        "Performance standards set appropriately",
+        "Baron characteristics reviewed briefly",
+        "Pattern procedures reviewed",
+        "Location established",
+        "Support emphasized",
+        "Positive mindset encouraged",
+        "Student ready and confident"
+      ]
+    },
+    {
+      "name": "First_Takeoff",
+      "prompt": "First takeoff with reduced guidance - student executes, Shirley observes.",
+      "steps": [
+        "Taxi: 'Taxi to runway for departure. You have taxi clearance, proceed to active runway'",
+        "Before takeoff: 'Before takeoff checks: props full forward, mixtures rich, cowl flaps open, flaps as desired, trim set, boost pumps on. Your checks, complete them'",
+        "Monitor student completing checks",
+        "Lined up: 'Lined up runway centerline. Tower clears you for takeoff. Execute normal Baron takeoff - you know the procedure. Go ahead'",
+        "Observe takeoff: Student should execute: smooth power application both throttles, directional control with rudder, rotation at 85 knots, positive climb, gear up, establish Vy 105 knots",
+        "If student hesitates or makes errors, provide brief coaching not step-by-step guidance",
+        "Initial climb: 'Continue climb to pattern altitude 1500 feet'",
+        "Pattern altitude: 'Level at 1500 feet, establish pattern speed 120 knots, configure for downwind. You have the airplane'",
+        "Monitor configuration: Student should reduce power appropriately, maintain altitude and speed",
+        "Feedback: 'First takeoff assessment: [Specific feedback on what went well and what needs improvement]. Power application was [assessment], directional control was [assessment], rotation timing was [assessment], climb out was [assessment]. Overall [assessment]. This is baseline, we will refine through repetition'",
+        "Coaching: 'For next takeoff: [specific improvement points - might be smoother throttle movement, earlier rotation, better directional control, etc.]'",
+        "Downwind: 'Established downwind. Prepare for first landing'"
+      ],
+      "goals": [
+        "Taxi to runway completed",
+        "Before takeoff checks completed independently",
+        "Takeoff clearance received",
+        "Normal takeoff executed with minimal prompting",
+        "Proper power application observed",
+        "Rotation at correct speed",
+        "Positive climb established",
+        "Gear retracted appropriately",
+        "Pattern altitude achieved",
+        "Pattern speed established",
+        "Specific performance feedback provided",
+        "Improvement coaching given",
+        "Ready for first landing"
+      ]
+    },
+    {
+      "name": "First_Landing",
+      "prompt": "First landing with coaching - establish baseline performance.",
+      "steps": [
+        "Downwind setup: 'Downwind at 1500 feet, 120 knots. Abeam landing point: landing gear down, verify three green lights, flaps approach'",
+        "Monitor student configuration",
+        "Prompt if needed: 'Gear down check, three green lights confirm before continuing. Flaps approach'",
+        "Base turn: 'Turn base when appropriate. Watch runway position, judge your turn point'",
+        "Observe student judgment and turn execution",
+        "Final turn: 'Turn final, align with runway centerline'",
+        "Final approach: 'Establish final approach: 90-95 knots, on glidepath. Small power adjustments for glidepath and speed. Flaps full below 500 feet'",
+        "Monitor approach: Provide brief coaching if significantly off parameters, otherwise let student fly",
+        "Short final: 'Short final looking [assessment]. Continue approach'",
+        "Threshold: 'Crossing threshold, begin roundout. Power to idle, hold off runway, flare'",
+        "Touchdown and rollout: Observe landing and rollout",
+        "After landing: 'Clear of runway. After landing: flaps up, cowl flaps open, boost pumps off'",
+        "Feedback: 'First landing assessment: [Specific detailed feedback]. Pattern discipline was [assessment], speed control was [assessment], glidepath management was [assessment], touchdown was [assessment]. Overall [assessment for first landing of the day]'",
+        "Coaching: 'For next landing: [specific improvement points - might be speed discipline, glidepath corrections, flare timing, etc.]'",
+        "Next: 'Good first pattern complete. Now multiple repetitions in left traffic to build consistency. Focus on: [key improvement areas from feedback]'"
+      ],
+      "goals": [
+        "Downwind configuration completed",
+        "Gear down and locked verified",
+        "Base turn executed with judgment",
+        "Final turn aligned with runway",
+        "Final approach speed 90-95 knots maintained",
+        "Flaps full extended below 500 ft",
+        "Glidepath maintained reasonably",
+        "Roundout and flare executed",
+        "Landing completed",
+        "After landing procedures completed",
+        "Detailed performance feedback provided",
+        "Specific coaching for improvement given",
+        "Student understands focus areas"
+      ]
+    },
+    {
+      "name": "Pattern_Left",
+      "prompt": "Multiple left traffic patterns building consistency.",
+      "steps": [
+        "Resume: 'Cleared for takeoff, fly left traffic. Execute normal takeoff and pattern. You have the airplane'",
+        "Multiple patterns: Conduct 3-4 complete patterns in left traffic with student executing procedures",
+        "Coaching approach: brief feedback after each landing, specific coaching points, let student fly independently, intervene only if safety concern",
+        "After pattern 1: 'Pattern complete. [Brief feedback on key points]. Continue left traffic'",
+        "After pattern 2: 'Improvement noted in [specific area]. [Brief feedback]. Watch [specific area needing attention]. Continue'",
+        "After pattern 3: '[Assessment of consistency]. [Positive feedback on progress]. [Coaching for further refinement]. One more left traffic'",
+        "After pattern 4: 'Left traffic patterns complete. Assessment: [Overall performance in left patterns]. Consistency [assessment]. Key strengths: [list]. Areas for continued work: [list]. Ready for right traffic patterns'",
+        "Throughout: Monitor for: proper speeds maintained, good pattern discipline, smooth control inputs, improving consistency, proper configuration management, safe operations",
+        "Provide encouragement for good performance and constructive feedback for improvement"
+      ],
+      "goals": [
+        "3-4 left traffic patterns completed",
+        "Student executing independently",
+        "Appropriate speeds maintained",
+        "Pattern discipline improving",
+        "Configuration management becoming smoother",
+        "Consistency developing across patterns",
+        "Brief coaching provided after each pattern",
+        "Positive reinforcement given",
+        "Overall left traffic performance assessed",
+        "Ready for right traffic"
+      ]
+    },
+    {
+      "name": "Go_Around",
+      "prompt": "Practice go-around procedures - critical safety skill.",
+      "steps": [
+        "Introduction: 'Important skill: go-around procedure. Anytime approach not stable or safe: execute go-around. Never force bad landing'",
+        "Procedure review: 'Go-around from final approach: Full power both throttles smoothly forward, pitch for Vy 105 knots, positive climb established, gear up, flaps to approach, climb to pattern altitude, props and mixtures already full forward. Clean procedure: power pitch positive rate gear up'",
+        "Setup: 'Next approach I will call go-around on short final for practice. Execute the procedure cleanly'",
+        "Approach: Student flies normal approach to short final",
+        "Call: 'Go around, go around! Execute now'",
+        "Monitor: Student should execute: full power application, pitch up to establish positive climb, gear up, flaps to approach, climb away",
+        "Coaching during if needed: Brief prompts only if student forgetting steps, let them execute procedure",
+        "Climb: 'Climbing away, gear up, flaps approach. Good. Continue climb to pattern altitude, re-enter left traffic'",
+        "Feedback: 'Go-around execution: [Assessment]. Power application was [assessment], pitch change was [assessment], configuration changes were [assessment], climb out was [assessment]. Go-arounds critical for safety when approach not right. Good practice'",
+        "Coaching: 'Remember: never hesitate to go around if approach not stable or comfortable. Better safe go-around than forced landing. You can initiate go-around anytime you judge necessary'",
+        "Next: 'Continue pattern, normal landing this time'"
+      ],
+      "goals": [
+        "Go-around importance emphasized",
+        "Procedure reviewed",
+        "Practice go-around executed from short final",
+        "Full power application accomplished",
+        "Positive climb established",
+        "Proper configuration changes completed",
+        "Return to pattern achieved",
+        "Go-around performance assessed",
+        "Safety emphasis reinforced",
+        "Student comfortable with procedure"
+      ]
+    },
+    {
+      "name": "Pattern_Right",
+      "prompt": "Right traffic patterns for complete proficiency.",
+      "steps": [
+        "Transition: 'Now practice right traffic patterns. Same procedures, opposite direction. Good practice for complete proficiency and different airports'",
+        "Note: 'Right traffic feels different - turning right in pattern, right hand on throttles managing power while right turning. Baron handles both equally well'",
+        "Resume: 'Cleared for takeoff, fly right traffic. Execute normal takeoff and pattern. You have the airplane'",
+        "Multiple patterns: Conduct 3-4 complete patterns in right traffic",
+        "Coaching approach: Similar to left traffic - brief feedback, let student fly, encourage independence",
+        "After pattern 1: 'Right pattern complete. [Brief feedback]. Right traffic adjustment: [if any issues with right turns]. Continue right traffic'",
+        "After pattern 2: '[Assessment of improvement]. [Brief specific feedback]. Continue'",
+        "After pattern 3: 'Consistency in right traffic [assessment]. [Feedback]. One more'",
+        "After pattern 4: 'Right traffic patterns complete. Assessment: [Performance in right patterns]. Comparison to left traffic: [assessment]. You can now operate confidently in either traffic direction. Well done'",
+        "Throughout: Monitor same standards as left traffic, note any differences in performance between left and right"
+      ],
+      "goals": [
+        "Right traffic patterns explained",
+        "3-4 right traffic patterns completed",
+        "Student adapting to right-hand patterns",
+        "Appropriate performance maintained",
+        "Brief coaching after each pattern",
+        "Consistency developing in right traffic",
+        "Both traffic directions now practiced",
+        "Overall right traffic performance assessed",
+        "Student proficient in both directions"
+      ]
+    },
+    {
+      "name": "Refinement",
+      "prompt": "Final patterns focusing on consistency and smoothness.",
+      "steps": [
+        "Assessment: 'Excellent progress today. You have completed: multiple left traffic patterns, go-around procedure, multiple right traffic patterns. Now: final patterns focusing on maximum smoothness and consistency. Your best flying'",
+        "Focus areas: 'For these final patterns, focus on: Smoothest power management sequences, most precise speed control, best pattern discipline and positioning, smoothest approaches and touchdowns, consistent performance. Apply everything learned today'",
+        "Direction: 'Fly [left or right] traffic, 2-3 final patterns. Show me your best work'",
+        "Multiple patterns: Student executes 2-3 final patterns with minimal input from Shirley",
+        "Coaching minimal: Only provide coaching if needed, otherwise let student demonstrate learned proficiency",
+        "After each: Very brief feedback, mostly positive reinforcement",
+        "Final pattern: 'Last pattern of the day. Make it your best. Full stop landing after this one'",
+        "Monitor final pattern and landing",
+        "Complete: 'Full stop, taxi clear of runway. Challenge 2.1 complete! Excellent work today'"
+      ],
+      "goals": [
+        "Progress acknowledged",
+        "Final patterns purpose explained",
+        "Focus on smoothness and consistency emphasized",
+        "2-3 final patterns completed",
+        "Minimal coaching required",
+        "Best performance demonstrated",
+        "Final full stop landing completed",
+        "Challenge completion achieved"
+      ]
+    },
+    {
+      "name": "Performance",
+      "prompt": "Assess overall performance and progress.",
+      "steps": [
+        "Overall assessment: 'Challenge 2.1 performance assessment. Today you completed: [number] total takeoffs and landings, left traffic patterns, right traffic patterns, go-around procedure, progressive refinement throughout session. Significant flying accomplished'",
+        "Takeoff performance: 'Takeoff execution: [Assessment across all takeoffs]. Power management was [assessment], directional control was [assessment], rotation timing was [assessment], climb outs were [assessment]. Progression from first to last: [improvement noted]'",
+        "Landing performance: 'Landing execution: [Assessment across all landings]. Speed control was [assessment], glidepath management was [assessment], touchdown quality was [assessment], consistency was [assessment]. Progression: [improvement noted]'",
+        "Pattern work: 'Pattern discipline: [Assessment]. Left traffic was [assessment], right traffic was [assessment], both directions now comfortable. Configuration management: [assessment], becoming smoother and more automatic'",
+        "Go-around: 'Go-around procedure executed [assessment]. Critical safety skill practiced successfully'",
+        "Consistency: 'Consistency development: [Assessment]. Early patterns vs later patterns showed [comparison]. This is exactly the goal - improving through repetition and building muscle memory'",
+        "Independence: 'Independence level: [Assessment]. You flew more independently than Module 1 as intended. Required [amount] of coaching which is [assessment for Module 2 Challenge 1]. Good progression toward independent operations'",
+        "Strengths: 'Key strengths demonstrated today: [list specific strengths observed]'",
+        "Improvement areas: 'Areas for continued development: [list specific areas]. These are normal for experience level and will improve with practice'",
+        "Module 2 progress: 'Module 2 Challenge 1 complete! Building proficiency in normal operations. You are developing into capable Baron pilot'"
+      ],
+      "goals": [
+        "Comprehensive performance assessment provided",
+        "Total activity quantified",
+        "Takeoff performance assessed specifically",
+        "Landing performance assessed specifically",
+        "Pattern work assessed both directions",
+        "Go-around execution noted",
+        "Consistency improvement documented",
+        "Independence level assessed appropriately",
+        "Specific strengths identified and praised",
+        "Improvement areas noted constructively",
+        "Progress in Module 2 acknowledged"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Debrief Challenge 2.1 and preview Challenge 2.2.",
+      "steps": [
+        "Complete: 'Challenge 2.1 - Takeoff and Landing Normal complete! First challenge of Module 2 accomplished successfully'",
+        "What accomplished: 'Today you accomplished: Multiple normal takeoffs with proper procedures, extensive pattern work in both traffic directions, normal landing technique refinement, go-around procedure practiced, progressive improvement through repetition, more independent flying than Module 1. This is real progress'",
+        "Module 2 approach: 'Module 2 approach working well. You flew more independently, I coached rather than guided step-by-step, you made decisions and executed procedures, feedback after rather than during. This is correct progression. You handled independence well'",
+        "Skills developed: 'Skills developed today: Takeoff consistency and smoothness, pattern discipline both directions, landing technique refinement, go-around proficiency, configuration management becoming automatic, independent procedure execution. Foundation for professional operations building'",
+        "Baron proficiency: 'Baron proficiency increasing. You are: comfortable with Baron power and weight, managing six lever power management well, maintaining appropriate speeds throughout flight, handling Baron smoothly and confidently. Aircraft becoming familiar tool not challenge'",
+        "Ready for next: 'You are ready for Challenge 2.2. Today was about technique execution and consistency. Next challenge goes deeper into HOW Baron performs'",
+        "Challenge 2.2 preview: 'Challenge 2.2 - Power Management. Focus: understanding Baron cruise performance in depth, using POH performance charts for planning, prop synchronization mastery, fuel economy vs speed tradeoffs, leaning procedures for efficiency, optimal cruise configurations, professional power management. Not just flying but understanding performance optimization'",
+        "Why important: 'Power management critical for: Cross-country flight planning, fuel efficiency and range, engine longevity and health, professional operations, getting maximum capability from Baron. Module 1 taught basics, Challenge 2.2 teaches mastery'",
+        "What to expect: 'Challenge 2.2 expectations: Less pattern work, more cruise flying, working with performance charts from POH, experimenting with power settings, understanding relationships between manifold pressure RPM speed and efficiency, optimizing Baron performance. More cerebral, less repetitive'",
+        "Study recommendation: 'Before Challenge 2.2 helpful to review: Baron cruise performance tables in POH, power setting ranges and combinations, leaning concepts for altitude, prop synchronization importance. Not required but helpful'",
+        "Module 2 progress: 'Module 2 progress: Challenge 2.1 complete (1/4), Challenge 2.2 next (Power Management), Challenge 2.3 after (Weight and Balance), Challenge 2.4 final (Advanced Operations). You are 25% through Module 2, progressing well'",
+        "Overall progress: 'Overall course progress: 5/11 challenges complete (45.5%)! Nearly halfway through entire Baron course!'",
+        "Celebration: 'Excellent work today! You demonstrated: ability to fly independently, good judgment in pattern work, improving consistency through practice, professional approach to procedures. Module 2 off to strong start!'",
+        "Encouragement: 'Continue building on this foundation. Each challenge develops different aspects of Baron proficiency. You are becoming capable twin-engine pilot!'"
+      ],
+      "goals": [
+        "Challenge 2.1 completion celebrated",
+        "Accomplishments listed specifically",
+        "Module 2 approach validated",
+        "Skills developed today identified",
+        "Baron proficiency growth acknowledged",
+        "Readiness for next challenge confirmed",
+        "Challenge 2.2 previewed (Power Management)",
+        "Importance of next topic explained",
+        "What to expect in 2.2 outlined",
+        "Study recommendations provided",
+        "Module 2 progress tracked (1/4)",
+        "Overall course progress noted (5/11 = 45.5%)",
+        "Strong performance celebrated",
+        "Encouragement for continued progress provided"
+      ]
+    }
+  ]
+}

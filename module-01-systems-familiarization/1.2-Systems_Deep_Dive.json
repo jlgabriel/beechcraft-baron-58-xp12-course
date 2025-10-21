@@ -1,0 +1,261 @@
+{
+  "name": "Systems_Deep_Dive",
+  "shortDescription": "Deep understanding of Baron 58 systems. Electrical system with dual alternators. Fuel system with 194 gallons and management. Engine controls - throttle, prop, mixture coordination. Constant-speed propeller operation. Environmental and de-ice systems. Systems integration.",
+  "prompt": "You are teaching Baron 58 systems in depth. Student understands cockpit layout from Challenge 1.1.\n\n**FOCUS:** How systems work, not just where they are. Technical understanding for safe operations.\n\n**SYSTEMS COVERED:** Electrical (dual alternators, battery, busses, failures), Fuel (194 gal capacity, tanks, selectors, boost pumps, management), Engine controls (throttle-prop-mixture relationships, power settings, manifold pressure/RPM), Propellers (constant-speed operation, governor), Environmental (heating, ventilation, de-ice systems comprehensive), Systems integration.\n\n**REFERENCE:** Use Baron 58 POH specs - Continental IO-550-C engines (300 HP each), 194 gallon fuel, retractable gear, extensive de-ice.\n\n**APPROACH:** Technical but accessible. Explain WHY systems designed this way. Show failure modes and backups. Emphasize redundancy and safety.\n\n**GOAL:** Student understands each system operation, knows normal indications, recognizes abnormal operations, ready for ground operations.\n\nKSFO - parked, systems available for demonstration.",
+  "openingLine": "Welcome to Systems Deep Dive! Today we explore how the Baron's systems actually work. Understanding these systems makes you a safer, more capable pilot. Ready to dive deep?",
+  "enabledTools": {
+    "pilotNotes": true,
+    "feedback": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "challengeTimer": true
+  },
+  "limitToAircraft": ["b58"],
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Brief systems deep dive - what we'll cover and why understanding systems matters.",
+      "steps": [
+        "Welcome: 'Challenge 1.2 - Systems Deep Dive. Last challenge you learned WHERE everything is. Today: HOW everything works'",
+        "Why matters: 'Understanding systems is not just academic. Knowing how systems work lets you: recognize problems early, handle failures safely, optimize performance, make better decisions, operate professionally'",
+        "Coverage today: 'Six major systems: Electrical system - dual alternators and redundancy. Fuel system - 194 gallons, tank management, boost pumps. Engine controls - throttle-prop-mixture coordination. Propeller system - constant-speed operation. Environmental systems - heating, cooling, de-ice. Systems integration - how they work together'",
+        "Approach: 'Each system: normal operation, important numbers to know, what can go wrong, how to handle problems. Technical information but explained clearly'",
+        "Baron design: 'Baron designed as professional all-weather twin. Many systems have redundancy and backups. This makes it reliable and safe, but you need to understand systems to use redundancy properly'",
+        "Reference: 'We use Baron 58 POH specifications. Continental IO-550-C engines - 300 HP each, 600 HP total. 194 gallon fuel capacity. Extensive de-ice equipment. Retractable gear. Professional-level systems'",
+        "Location: 'KSFO, parked at gate. Systems available for demonstration. We will power up systems as needed to show operation'",
+        "Ask: 'Questions before we begin systems deep dive?'",
+        "Ready: 'Let's start with the electrical system - foundation for everything else'"
+      ],
+      "goals": [
+        "Purpose of systems knowledge explained",
+        "Coverage outlined (6 systems)",
+        "Approach established (technical but accessible)",
+        "Baron design philosophy introduced (redundancy)",
+        "POH specifications referenced",
+        "Student ready to learn"
+      ]
+    },
+    {
+      "name": "Electrical_System",
+      "prompt": "Teach electrical system - dual alternators, battery, busses, normal and failure operations.",
+      "steps": [
+        "Overview: 'Baron electrical system: one 12-volt battery, two engine-driven alternators (one per engine), main bus, avionics bus. Dual alternators provide redundancy - if one fails, other continues powering aircraft'",
+        "Battery: '12-volt battery, 35 amp-hour capacity. Provides power for engine start and backup power if both alternators fail. Located in nose compartment. Powers essential systems: flight instruments, radios, lights, fuel pumps'",
+        "Alternators: 'Two alternators - left alternator driven by left engine, right alternator driven by right engine. Each produces 60 amps at normal engine RPM. Both charge battery and power electrical bus. Independent - if one engine stops, that alternator stops, but other continues'",
+        "Master switches: 'Three master switches on sub-panel: BATTERY master, LEFT ALT master, RIGHT ALT master. Startup sequence: Battery ON first, then start engines, then both alternator masters ON after engines stabilized'",
+        "Electrical buses: 'Main electrical bus powers most systems. Avionics bus powers radios and navigation equipment, protected by Avionics Master switch. Separating avionics protects sensitive electronics from voltage spikes during engine start'",
+        "Normal operation: 'Normal flight: battery master ON, both alternator masters ON. Both alternators sharing electrical load, charging battery. Ammeter shows charging current. Voltmeter shows 28 volts (two 14V alternators in parallel)'",
+        "Single alternator failure: 'If one alternator fails: other alternator continues powering all systems and charging battery. You notice: ammeter shows higher load on remaining alternator. You have full electrical power but no redundancy. Land soon and have system checked'",
+        "Both alternators failure: 'If both alternators fail (extremely rare): battery provides backup power. Time available depends on electrical load - typically 30-60 minutes. Shed non-essential loads: turn off unnecessary lights, one radio only, minimize electrical use. Land as soon as practical'",
+        "Load shedding: 'If battery-only: prioritize essential equipment. Keep: one COM radio, navigation instruments, flight instruments, landing gear (for extension), minimal lights. Turn off: cabin heat, unnecessary lights, autopilot, non-essential avionics'",
+        "Implications: 'Dual electrical system makes Baron very reliable. Single alternator failure is not emergency - you have full power from other alternator. This redundancy is why Baron is trusted for IFR and professional operations'",
+        "Ask: 'Questions about electrical system?'",
+        "Next: 'Next: fuel system - 194 gallons and how to manage them'"
+      ],
+      "goals": [
+        "Dual alternator system explained",
+        "Battery capacity and role understood",
+        "Master switch sequence taught",
+        "Bus structure explained",
+        "Normal operations described",
+        "Single alternator failure handled",
+        "Both alternators failure procedures taught",
+        "Redundancy value emphasized",
+        "Ready for fuel system"
+      ]
+    },
+    {
+      "name": "Fuel_System",
+      "prompt": "Teach fuel system - capacity, tanks, selectors, boost pumps, management procedures.",
+      "steps": [
+        "Capacity: 'Baron 58 total fuel capacity: 194 gallons (1,164 pounds). Usable fuel: approximately 190 gallons. This is substantial fuel load - over half a ton of fuel at full tanks'",
+        "Tank configuration: 'Fuel stored in wing tanks. Each wing has main tank and auxiliary tank. Left wing: left main, left auxiliary. Right wing: right main, right auxiliary. Fuel flows from aux to main, then main to engine'",
+        "Fuel selectors: 'Each engine has fuel selector valve. Positions: ON (normal - draws from main tank as aux feeds into it), OFF (fuel shutoff), CROSSFEED (allows one engine to draw from opposite side tanks - emergency only). Normal operations: both selectors ON'",
+        "Fuel flow: 'Fuel gravity-feeds from auxiliary tanks to main tanks. Main tanks feed engines through engine-driven fuel pumps. Auxiliary tanks automatically keep main tanks full. You don't need to switch tanks during flight - system manages automatically'",
+        "Boost pumps: 'Two electric fuel boost pumps - left and right, on sub-panel. Low-pressure pumps assist engine-driven pumps. Use boost pumps: engine start (prime system), takeoff (backup), landing (backup), if engine pump fails (emergency backup), switching tanks (if ever needed)'",
+        "Normal operation: 'Normal flight: both fuel selectors ON, boost pumps ON for takeoff/landing, OFF for cruise (engine pumps sufficient). Fuel flows automatically from aux to main to engines. Monitor fuel gauges - left and right fuel quantities on sub-panel'",
+        "Fuel management: 'Baron fuel management simpler than many twins because aux feeds main automatically. Your job: monitor fuel gauges both sides, keep fuel reasonably balanced (both engines burning approximately equally), calculate fuel remaining vs fuel needed, plan for reserves'",
+        "Fuel planning: 'Typical fuel consumption: approximately 32 gallons per hour total (16 GPH per engine) at cruise power. With 190 usable gallons, approximately 6 hours endurance with reserves. Always plan for: trip fuel, reserve fuel (45 minutes for reciprocating engines), alternate fuel if IFR, contingency fuel'",
+        "Imbalance: 'If fuel becomes significantly imbalanced between sides: crossfeed valve allows transferring fuel. However, in normal operations with both engines running, fuel stays naturally balanced. Imbalance usually only issue if one engine failed and running single-engine for extended time'",
+        "Boost pump failure: 'If boost pump fails: engine-driven pump continues providing fuel. Boost pump is backup, not primary. If engine-driven pump fails: boost pump can continue providing fuel. This redundancy prevents fuel starvation'",
+        "Gauges: 'Fuel quantity gauges on sub-panel show left and right tank quantities in gallons. Scan regularly. If quantity decreasing faster than expected: possible fuel leak, investigate immediately. If quantities unequal: verify both engines running properly'",
+        "Key numbers: 'Remember: 194 gallons total capacity, ~32 GPH consumption, ~6 hours endurance, 1,164 pounds of fuel at full tanks (significant weight affecting performance and CG)'",
+        "Ask: 'Questions about fuel system?'",
+        "Next: 'Next: engine controls - coordinating throttle, prop, and mixture'"
+      ],
+      "goals": [
+        "194 gallon capacity taught",
+        "Tank configuration explained (main + aux per side)",
+        "Fuel selectors understood (ON normal)",
+        "Automatic aux-to-main flow explained",
+        "Boost pump purposes taught",
+        "Normal fuel management procedures taught",
+        "Fuel planning introduced (32 GPH)",
+        "Imbalance and crossfeed explained",
+        "Redundancy emphasized",
+        "Key numbers memorized",
+        "Ready for engine controls"
+      ]
+    },
+    {
+      "name": "Engine_Controls",
+      "prompt": "Teach engine control coordination - throttle, propeller, mixture relationships and power settings.",
+      "steps": [
+        "Three controls: 'Each Baron engine controlled by three levers: Throttle (manifold pressure), Propeller (RPM), Mixture (fuel-air ratio). Six levers total on throttle quadrant. Coordinating these three per engine is key to Baron operations'",
+        "Throttle: 'Black knobs. Controls throttle plates in intake manifold, controlling air flow, controlling manifold pressure. Manifold pressure measured in inches of mercury. Full forward: approximately 29 inches at sea level. Pull back: decreases manifold pressure, decreases power. Throttle controls POWER (manifold pressure)'",
+        "Propeller: 'Blue knobs. Controls constant-speed propeller governor setpoint, controlling propeller RPM. Full forward: high RPM (2,700 RPM - fine pitch, more thrust, more noise). Pull back: lower RPM (coarse pitch, quieter, more efficient cruise). Propeller controls ENGINE SPEED (RPM)'",
+        "Mixture: 'Red knobs. Controls fuel flow to cylinders, controlling fuel-air mixture ratio. Full forward: full rich (sea level, high power). Pull back: leaning mixture (high altitude, cruise economy). Full back: cutoff (stops fuel flow, shuts down engine). Mixture controls FUEL EFFICIENCY'",
+        "Manifold pressure and RPM: 'Critical relationship: never exceed manifold pressure relative to RPM. Rule: manifold pressure (in inches) should not exceed RPM (in hundreds). Example: 25 inches manifold pressure OK with 2,500 RPM, but NOT OK with 2,300 RPM - causes engine stress. This is \"oversquare\" operation - avoid it'",
+        "Power changes: 'Increasing power sequence: Propeller forward first (increase RPM), then throttle forward (increase manifold pressure). Decreasing power sequence: Throttle back first (decrease manifold pressure), then propeller back (decrease RPM). Sequence prevents oversquare operation'",
+        "Takeoff power: 'Takeoff: Full throttle (maximum manifold pressure), full propeller forward (2,700 RPM), full rich mixture. Maximum power: approximately 29 inches MP, 2,700 RPM both engines. Monitor engine instruments: CHT, EGT, oil pressure/temp all in green arcs'",
+        "Cruise power: 'Cruise: Reduce to cruise power after reaching cruise altitude. Typical cruise: 23-25 inches manifold pressure, 2,300-2,500 RPM, mixture leaned for altitude. This balances speed, efficiency, engine longevity. Cruise power tables in POH show specific settings for different altitudes and desired performance'",
+        "Leaning: 'Lean mixture at altitude for efficiency. Procedure: cruise power set, gradually lean mixture while watching fuel flow and EGT. Lean until EGT peaks, then enrich slightly (25-50°F rich of peak). Saves fuel, prevents plug fouling. Never lean during high power operations (takeoff, climb, go-around)'",
+        "Synchronization: 'Both engines should run at same power settings for coordinated flight. Match both throttles, both propellers, both mixtures. Slight differences create yaw. Propeller synchronization system (Prop Sync switch on sub-panel) automatically matches prop RPMs precisely, eliminating beating sound from slightly different prop speeds'",
+        "Monitoring: 'Continuously monitor engine instruments for both engines: Manifold pressure gauges (power check), Tachometers (RPM check), Fuel flow (consumption check), Temperatures - CHT and EGT (heat check), Oil pressure and temp (lubrication check). Any difference between engines or abnormal reading requires investigation'",
+        "Ask: 'Questions about engine controls coordination?'",
+        "Next: 'Next: how constant-speed propellers actually work'"
+      ],
+      "goals": [
+        "Three controls per engine explained",
+        "Throttle = manifold pressure = power",
+        "Propeller = RPM = engine speed",
+        "Mixture = fuel-air ratio = efficiency",
+        "Oversquare operation rule taught (MP ≤ RPM/100)",
+        "Power change sequences taught (up: prop then throttle, down: throttle then prop)",
+        "Takeoff power settings memorized",
+        "Cruise power concept introduced",
+        "Leaning procedure taught",
+        "Synchronization importance emphasized",
+        "Monitoring both engines stressed",
+        "Ready for propeller system"
+      ]
+    },
+    {
+      "name": "Propeller_System",
+      "prompt": "Teach constant-speed propeller operation and governor system.",
+      "steps": [
+        "Constant-speed concept: 'Baron has constant-speed propellers - automatically adjust blade pitch to maintain selected RPM. Different from fixed-pitch prop where RPM changes with throttle and airspeed. Constant-speed props optimize efficiency at different flight conditions'",
+        "Blade pitch: 'Propeller blade pitch is angle of blade relative to rotation. FINE PITCH (low angle): Takes small bite of air, allows high RPM, creates more thrust but less efficient. Like low gear in car. COARSE PITCH (high angle): Takes big bite of air, requires lower RPM, more efficient but less thrust. Like high gear in car'",
+        "Governor: 'Propeller governor is mechanical-hydraulic system that automatically adjusts blade pitch to maintain set RPM. When you set prop lever to 2,500 RPM, governor adjusts pitch constantly to maintain exactly 2,500 RPM regardless of throttle or airspeed changes'",
+        "Operation: 'You select desired RPM with propeller lever. Governor senses actual RPM. If RPM too high: governor increases blade pitch (coarser), slowing prop to target RPM. If RPM too low: governor decreases blade pitch (finer), speeding prop to target RPM. Happens automatically and continuously'",
+        "Takeoff: 'Takeoff: propeller full forward = 2,700 RPM = fine pitch. Fine pitch creates maximum thrust for acceleration and climb. Propeller taking small fast bites, moving lots of air quickly'",
+        "Cruise: 'Cruise: reduce propeller to 2,300-2,500 RPM = coarser pitch. Coarse pitch more efficient at cruise speeds, quieter, less engine wear. Propeller taking big slow bites, efficient for sustained cruise'",
+        "Descent: 'Descent: consider increasing propeller RPM (finer pitch) for better throttle response and cooling. Engine running at reduced power for descent needs good cooling. Higher RPM = more oil circulation and cooling airflow'",
+        "Propeller lever limits: 'Propeller lever range: Full forward = 2,700 RPM (redline), Full back = approximately 1,800 RPM (minimum). Never exceed 2,700 RPM redline - causes propeller stress and potential failure. Green arc 2,100-2,575 RPM = continuous operations range'",
+        "Feathering: 'If engine fails: propeller can be FEATHERED - blades rotated to knife-edge into wind, minimizing drag. Feathering critical for single-engine operations. Allows much better performance than windmilling prop. We will practice feathering in Module 3 emergency procedures'",
+        "Benefits: 'Why constant-speed props worth complexity: Better takeoff performance (fine pitch), More efficient cruise (coarse pitch), Better climb rate, Quieter operations, Reduced engine wear, Ability to feather if engine fails. Professional aircraft feature'",
+        "Maintenance: 'Constant-speed props require regular maintenance: governor overhaul, seal inspection, pitch mechanism lubrication. More complex than fixed-pitch but worth it for performance'",
+        "Ask: 'Questions about propeller system?'",
+        "Next: 'Next: environmental systems - staying comfortable and safe in all conditions'"
+      ],
+      "goals": [
+        "Constant-speed concept explained",
+        "Fine vs coarse pitch taught",
+        "Governor operation understood",
+        "Automatic pitch adjustment explained",
+        "Takeoff settings (fine pitch) explained",
+        "Cruise settings (coarse pitch) explained",
+        "RPM limits taught (2,700 redline)",
+        "Feathering capability mentioned",
+        "Benefits of constant-speed props listed",
+        "Ready for environmental systems"
+      ]
+    },
+    {
+      "name": "Environmental",
+      "prompt": "Teach heating, ventilation, and comprehensive de-icing systems.",
+      "steps": [
+        "Overview: 'Baron environmental systems keep pilots comfortable and aircraft safe in all weather. Heating, ventilation, and extensive de-icing systems make Baron capable all-weather IFR aircraft'",
+        "Heating: 'Cabin heat from engine exhaust heat exchangers. Hot air from engine routed through heat exchanger (does not mix exhaust with cabin air - CO safety), then ducted to cabin. Cabin heat control adjusts heat flow. Available anytime engines running'",
+        "Ventilation: 'Fresh air from ram air vents. Outside air enters vents, flows through cabin, exits via outflow valves. Adjustable air vents at pilot and copilot positions. Good ventilation prevents fogging and fatigue'",
+        "Pitot heat: 'Two pitot heat switches - left and right pitot tubes. Electrical heating elements prevent ice from blocking pitot tubes. Critical for airspeed indication. Use in visible moisture or clouds. Without pitot heat in icing, airspeed indication fails - dangerous'",
+        "Propeller de-ice: 'Propeller de-ice - electrical heating elements embedded in prop leading edges. Prevents ice accumulation on propeller blades. Ice on props causes vibration and reduced performance. Prop de-ice switch on sub-panel, amp meter shows electrical load'",
+        "Windshield heat: 'Windshield heat - electrical heating prevents ice and frost on windshield. Maintains visibility in freezing conditions. Essential for IFR operations in ice'",
+        "Stall warning heat: 'Stall warning inlet heater keeps stall warning system ice-free. If stall warning inlet ices over, you lose stall warning - critical safety system. Stall warning heat switch on sub-panel'",
+        "Surface de-ice boots: 'Pneumatic de-ice boots on wing leading edges and horizontal stabilizer. Rubber boots inflate periodically, cracking ice accumulation. Ice then blows away in airflow. Surface de-ice switch: AUTO mode (boots cycle automatically every 60 seconds when activated) or MANUAL mode (pilot activates cycle manually). Pressure gauge shows boot system pressure'",
+        "De-ice procedures: 'In icing conditions: Pitot heat ON, Prop de-ice ON, Windshield heat ON, Stall warning heat ON, Surface de-ice AUTO. Monitor ice accumulation on wing leading edges (use ice light at night). If ice accumulates: boots automatically cycle, breaking ice. If ice persists: exit icing conditions - de-ice removes ice but doesn't prevent accumulation in severe icing'",
+        "Ice light: 'Ice light illuminates wing leading edge so pilot can see ice accumulation in darkness. Critical for monitoring de-ice system effectiveness at night'",
+        "Known ice: 'Baron de-ice systems certified for flight into known icing conditions (FIKI). However, all icing should be avoided when possible. De-ice systems remove ice but have limits. Severe icing can overwhelm any system. If encountering ice: monitor closely, request altitude or route change if needed, exit icing ASAP'",
+        "System differences: 'Many single-engine aircraft have minimal de-ice (pitot heat only). Baron has comprehensive de-ice making it capable IFR platform. This system allows safe operations in wider weather conditions, but requires pilot knowledge and monitoring'",
+        "Ask: 'Questions about environmental and de-ice systems?'",
+        "Next: 'Next: how all these systems integrate and work together'"
+      ],
+      "goals": [
+        "Heating and ventilation explained",
+        "Pitot heat critical importance taught",
+        "Propeller de-ice system explained",
+        "Windshield and stall warning heat taught",
+        "Pneumatic de-ice boots explained",
+        "De-ice procedures in icing taught",
+        "Ice light purpose explained",
+        "FIKI capability mentioned with limitations",
+        "Comprehensive de-ice vs single-engine noted",
+        "Ready for integration"
+      ]
+    },
+    {
+      "name": "Integration",
+      "prompt": "Show how systems work together and interdependencies.",
+      "steps": [
+        "Systems interaction: 'Baron systems don't operate independently - they interact and depend on each other. Understanding these relationships critical for troubleshooting and decision-making'",
+        "Electrical foundation: 'Electrical system powers many other systems: Fuel boost pumps (electrical), Propeller governors (electrical), Flaps (electrical), Landing gear (electrical), De-ice systems (mostly electrical), Avionics (electrical). If you lose electrical power, you lose or degrade many systems. This is why dual alternators so important'",
+        "Engine and fuel: 'Engines need fuel from fuel system. Fuel system needs boost pumps (electrical). Engine-driven fuel pumps provide primary fuel pressure. If engine pump fails, boost pump (electrical) is backup. If both fail that side, you can crossfeed from opposite fuel system. Multiple redundancies prevent fuel starvation'",
+        "Engine and propeller: 'Propeller governor requires engine-driven oil pump to operate. If engine oil pressure fails, propeller governor fails, prop may go to fine pitch and overspeed. This is one reason oil pressure is critical instrument. Low oil pressure = potential propeller control loss plus engine damage'",
+        "Hydraulic and electrical: 'Landing gear uses electrical hydraulic pump. Extending/retracting gear requires electrical power. If you lose electrical power, emergency gear extension uses pneumatic pressure or gravity - gear falls and locks by weight and air pressure. Even without electrical, gear extends safely'",
+        "De-ice interdependencies: 'De-ice systems require: Electrical power (pitot, prop, windshield heat), Pneumatic pressure (wing/tail boots), Engine power (pneumatic pressure from engine-driven pump). In single-engine situation, you lose some de-ice capability from failed engine side'",
+        "Single-engine impact: 'If one engine fails: you lose that alternator (50% electrical capacity), that engine-driven fuel pump (fuel crossfeed available), that engine-driven vacuum/pneumatic (partial de-ice loss), power reduction (200+ knot cruise → 130 knot single-engine). This is why Baron (and all twins) require single-engine training'",
+        "Workload management: 'Multiple systems mean higher workload. Professional pilots manage this with: systematic scanning (instruments, engine gauges, systems), flows and checklists (standardized procedures), prioritization (aviate, navigate, communicate, then systems), understanding relationships (troubleshoot efficiently)'",
+        "Redundancy philosophy: 'Baron has redundancy throughout: Two engines, Two alternators, Two fuel pumps per engine, Two boost pumps, Two COM radios, Two NAV radios, Backup instruments. Redundancy improves safety but requires monitoring both sides constantly'",
+        "Example scenario: 'Imagine: right alternator fails. Right engine still running fine. Impact: increased electrical load on left alternator, less redundancy but still full power available, should land soon for maintenance, not emergency. Now imagine: right engine fails completely. Impact: right alternator gone, right engine pump gone, right prop needs feathering, significant performance loss, SINGLE-ENGINE OPERATIONS. Very different scenarios requiring very different responses'",
+        "Your responsibility: 'Understanding systems integration lets you: recognize problems quickly (abnormal indications), predict consequences (cascade effects), prioritize actions (immediate vs soon), make informed decisions (continue or divert), troubleshoot effectively (systematic approach)'",
+        "Ask: 'Questions about systems integration?'",
+        "Next: 'Let's debrief systems knowledge'"
+      ],
+      "goals": [
+        "Systems interdependencies explained",
+        "Electrical as foundation emphasized",
+        "Fuel system redundancy shown",
+        "Engine-propeller connection taught",
+        "Single-engine impacts previewed",
+        "Redundancy philosophy explained",
+        "Example scenario presented",
+        "Pilot responsibility emphasized",
+        "Ready for debrief"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Debrief systems knowledge, celebrate learning, preview ground operations.",
+      "steps": [
+        "Complete: 'Challenge 1.2 - Systems Deep Dive complete!'",
+        "Review: 'Today you learned six major Baron systems in depth: Electrical - dual alternators, battery, redundancy, failure modes. Fuel - 194 gallons, tank configuration, boost pumps, management. Engine controls - throttle-prop-mixture coordination, power settings, oversquare rule. Propellers - constant-speed operation, governor, fine vs coarse pitch. Environmental - heating, ventilation, comprehensive de-ice systems. Integration - how systems interact and depend on each other'",
+        "Key takeaways: 'Baron design emphasizes redundancy and capability: dual engines, dual alternators, dual boost pumps, comprehensive de-ice, advanced avionics. This makes Baron reliable all-weather platform, but requires understanding systems to use redundancy properly. Systems don't operate independently - they interact. Understanding interactions helps troubleshoot and make good decisions'",
+        "Numbers to remember: '194 gallons fuel capacity, 32 GPH fuel consumption, 600 HP total (300 per engine), 2,700 RPM redline, Manifold pressure ≤ RPM/100 rule, Cruise typically 23-25 inches MP and 2,300-2,500 RPM'",
+        "From knowledge to practice: 'You now understand how Baron systems work. Next challenge: Ground Operations - we put this knowledge into practice. Engine start procedures, taxi techniques, run-up checks, preparing for flight. Theory becomes practice'",
+        "Module 1 progress: 'Module 1 - Systems and Familiarization: Challenge 1.1 Cockpit Familiarization ✓, Challenge 1.2 Systems Deep Dive ✓, Challenge 1.3 Ground Operations (next), Challenge 1.4 First Flight Supervised'",
+        "Course progress: 'Total course progress: 2/11 challenges complete - 18.2%'",
+        "Celebrate: 'Excellent work mastering complex systems! Baron has many systems, and you now understand how they all work. This knowledge makes you capable Baron pilot'",
+        "Preview: 'Challenge 1.3 - Ground Operations. We will: perform thorough pre-flight inspection (checking systems you learned today), start both engines properly, taxi the Baron (different from single-engine), perform complete run-up (checking both engines and all systems), prepare for first flight. Hands-on practice!'",
+        "Study recommendation: 'Before next session: review engine control procedures (throttle-prop-mixture sequences), review fuel system (tank configuration and boost pump usage), review de-ice systems (what systems in what conditions). This will help when we practice ground operations'",
+        "Ask: 'Any questions about systems before we move to ground operations?'",
+        "Encourage: 'You are building strong foundation for Baron operations. Systems knowledge is not glamorous but absolutely essential for safe, professional flying. Well done!'"
+      ],
+      "goals": [
+        "Challenge completion celebrated",
+        "All six systems recapped",
+        "Key takeaways emphasized (redundancy, interactions)",
+        "Important numbers recapped",
+        "Theory to practice transition explained",
+        "Module 1 progress noted (2/4)",
+        "Course progress noted (2/11 = 18.2%)",
+        "Next challenge previewed (Ground Operations)",
+        "Study recommendations provided",
+        "Student encouraged"
+      ]
+    }
+  ]
+}

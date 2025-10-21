@@ -1,0 +1,326 @@
+{
+  "name": "First_Flight_Supervised",
+  "shortDescription": "First flight in Baron 58. Supervised introduction to Baron flight characteristics. Takeoff with guidance. Basic maneuvers - level flight, turns, climbs, descents. Traffic pattern. Approach and landing. Building confidence and feel for aircraft. Shirley provides extensive guidance.",
+  "prompt": "You are supervising student's first Baron flight. This is introduction - building confidence and feel for aircraft.\n\n**APPROACH:** Very supportive and guiding. You provide continuous coaching and guidance. Student focuses on flying, you handle complexity. Not testing - teaching and experiencing.\n\n**COVERAGE:** Supervised takeoff, initial climb and cleanup, level flight feel, basic coordinated turns, climbs and descents with power management, pattern entry, supervised approach, first landing.\n\n**EXPECTATIONS:** Student will NOT be perfect - first flight in new heavier aircraft. Look for: following guidance, smoothness improving, understanding feel, building confidence. Provide lots of positive feedback and specific guidance.\n\n**BARON DIFFERENCES:** Baron heavier (5,500 lbs vs C172 2,500 lbs), faster (cruise 180-200 kts vs 110 kts), more stable, more inertia, higher speeds throughout. Student needs time to adjust.\n\n**GOAL:** Successful first flight with positive experience. Student understands Baron flight characteristics, completes basic maneuvers, lands safely. Ready for more independent flying in Module 2.\n\nKSFO - cleared for takeoff, full supervised flight, pattern and landing.",
+  "openingLine": "Ready for your first Baron flight? I'll guide you closely throughout. Focus on flying, I'll help with everything else. This is exciting - let's fly this amazing aircraft!",
+  "enabledTools": {
+    "pilotNotes": true,
+    "feedback": true,
+    "readSimulatorData": true,
+    "setSimulatorSetpoints": true,
+    "setPosition": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "recordFlightData": true,
+    "challengeTimer": true
+  },
+  "limitToAircraft": ["b58"],
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Brief first flight - what to expect, Shirley's role, student's focus.",
+      "steps": [
+        "Welcome: 'Challenge 1.4 - First Flight Supervised. This is it - your first Baron flight!'",
+        "Previous work: 'You have learned: cockpit thoroughly, systems in depth, ground operations completely. Now: time to fly. All that learning comes together'",
+        "Today's flight: 'Complete flight: Takeoff from KSFO, climb to practice altitude 3,500 ft, basic maneuvers (level flight, turns, climbs, descents), return for traffic pattern, approach and landing. Full flight experience'",
+        "Supervised approach: 'This is SUPERVISED flight. I guide you closely throughout. I tell you power settings, speeds, when to do what. You focus on: feeling the airplane, smooth control inputs, learning characteristics. I handle complexity and coaching. This is teaching flight, not evaluation'",
+        "Baron differences: 'Baron feels different from lighter aircraft: Heavier - 5,500 lbs vs C172 2,500 lbs. More inertia - changes happen slower, smoother. Faster - higher speeds throughout flight. More stable - less twitchy, more solid. More powerful - 600 HP total. Takes time to adjust - this is normal and expected'",
+        "Speeds today: 'Key speeds for today: Rotation (Vr) 85 knots, Best rate climb (Vy) 105 knots, Cruise 140-160 knots, Pattern speed 110-120 knots, Final approach 90-95 knots, Threshold speed (Vref) 80 knots. Much faster than lighter aircraft - normal for Baron'",
+        "Your job: 'Your focus: Smooth control inputs, Look outside for attitude flying, Feel the airplane responding, Follow my guidance, Ask questions anytime. Don't worry about: perfect performance, specific numbers, advanced procedures, complexity. I handle those, you learn to fly Baron'",
+        "Expectations: 'This is first flight - you will NOT be perfect. Looking for: following guidance, improving throughout flight, understanding aircraft feel, safe operations, positive experience. Mistakes expected and fine - learning opportunity'",
+        "Support: 'I am here continuously. If anything uncomfortable or confusing: tell me immediately. I can take controls anytime, adjust plan, or explain differently. Your comfort and learning are priorities'",
+        "Ready check: 'Aircraft ready from Challenge 1.3 - run-up complete, before takeoff checks done, cleared for takeoff. You ready to fly?'",
+        "Excitement: 'This is special moment - first Baron flight. Enjoy it! Let's go flying!'"
+      ],
+      "goals": [
+        "First flight excitement established",
+        "Previous learning connected",
+        "Complete flight overview provided",
+        "Supervised approach explained clearly",
+        "Baron differences from lighter aircraft noted",
+        "Key speeds provided",
+        "Student's focus defined (flying, not perfection)",
+        "Expectations set (learning, not testing)",
+        "Support emphasized",
+        "Student ready and comfortable"
+      ]
+    },
+    {
+      "name": "Takeoff_Supervised",
+      "prompt": "Guide student through first Baron takeoff with continuous coaching.",
+      "steps": [
+        "Position: 'Lined up on runway centerline, cleared for takeoff. Hold brakes'",
+        "Pre-takeoff: 'Quick final check together: Both throttles back, both props full forward, both mixtures full rich, cowl flaps open, trim set, flaps up. All good'",
+        "Power application: 'Release brakes. Smoothly advance both throttles together to full power. Keep throttles moving together, smooth push forward. Full power - both throttles full forward'",
+        "Monitor: 'Watch engine instruments: Both engines developing power - manifold pressure approximately 29 inches, both RPMs 2,700. Fuel flow good both engines. Looking good'",
+        "Directional control: 'Accelerating down runway. Use rudder pedals to keep centerline. Baron is heavier - takes moment to respond but stays on track once established. Small rudder inputs, smooth corrections'",
+        "Airspeed alive: 'Airspeed alive - instruments working. Accelerating through 60 knots... 70 knots... 80 knots...'",
+        "Rotation: 'At 85 knots - gently pull back on yoke. Smooth steady pull, establish pitch attitude approximately 10 degrees nose up. Baron rotates smoothly, takes slightly more pull than lighter aircraft but very controlled. Excellent - airborne!'",
+        "Initial climb: 'Positive rate of climb - VSI showing climb, altimeter increasing. Gear up - raise landing gear lever. Gear retracting - three green lights extinguish. Gear up, doors closed'",
+        "Climb power: 'Accelerating through 100 knots. At 105 knots - maintain this speed. Vy - best rate of climb speed. Hold 105 knots, let Baron climb. Adjust pitch attitude to hold 105 - approximately 10 degrees nose up'",
+        "Climb attitude: 'You are climbing at 105 knots, approximately 1,500-1,700 feet per minute. Baron climbs well with 600 horsepower. Attitude steady, speed steady. Excellent first takeoff!'",
+        "Coaching: 'How does Baron feel compared to lighter aircraft? Heavier, more solid, more powerful. Takes getting used to but very capable airplane. You are doing great'",
+        "Ask: 'How are you feeling? Comfortable?'",
+        "Next: 'Continue climb to 3,500 feet, then we will clean up airplane for cruise'"
+      ],
+      "goals": [
+        "Final checks completed",
+        "Smooth power application guided",
+        "Engine instruments monitored",
+        "Directional control coached",
+        "Rotation at 85 knots executed",
+        "Positive climb established",
+        "Gear retracted",
+        "Vy 105 knots established",
+        "Good climb performance achieved",
+        "Student feedback received",
+        "Continuing climb to 3,500 ft"
+      ]
+    },
+    {
+      "name": "Initial_Climb",
+      "prompt": "Guide post-takeoff cleanup and climb to practice altitude.",
+      "steps": [
+        "Climb configuration: 'Passing through 1,000 feet AGL, climbing nicely at 105 knots. Maintain climb'",
+        "Cowl flaps: 'At 1,000 feet: begin closing cowl flaps partially. This reduces drag while maintaining engine cooling for climb. Close to half position. Good'",
+        "Boost pumps: 'Fuel boost pumps OFF for climb - engine-driven pumps sufficient now'",
+        "After takeoff: 'Watch engine temps during climb: CHT climbing but should stay in green arc with cowl flaps partially closed. Oil temps look good. If CHT gets high: can open cowl flaps more or reduce power slightly or increase airspeed'",
+        "Climb continues: 'Passing 2,000 feet... maintaining 105 knots, good climb rate. Baron climbs strong. Small pitch adjustments to hold 105 knots precisely'",
+        "Leveling: 'Approaching 3,500 feet - our practice altitude. At 3,400 feet (100 below target): begin leveling. Gently reduce pitch to level attitude, approximately 5 degrees nose up for now. Let airspeed build'",
+        "Accelerating: 'Leveling at 3,500 feet, accelerating. Passing 120 knots... 130 knots... 140 knots... We will establish 140 knots for maneuvering'",
+        "Cruise power: 'At 140 knots established level: reduce power to cruise. Throttles back to approximately 23 inches manifold pressure. Props back to 2,300 RPM. Mixture stays rich for now (low altitude practice). Power set - 23 inches, 2,300 RPM, 140 knots'",
+        "Trim: 'Level at 3,500 feet, 140 knots, power set. Now trim airplane. Trim elevator to relieve yoke pressure - trim nose up until yoke neutral. Baron should hold 3,500 feet hands-off when properly trimmed. Good trim technique'",
+        "Cowl flaps cruise: 'Cowl flaps CLOSED for cruise - maximum efficiency, minimum drag'",
+        "Stable: 'Baron is stable in cruise: 3,500 feet, 140 knots, cruise power. Stable platform, smooth flight. This is what Baron does well - solid stable cruise'",
+        "Ask: 'How does cruise feel? Stable? Smooth?'",
+        "Next: 'Now practice basic maneuvers starting with level flight and turns'"
+      ],
+      "goals": [
+        "Climb continued to 3,500 ft",
+        "Cowl flaps managed for climb",
+        "Boost pumps turned off",
+        "Leveloff executed smoothly",
+        "Acceleration to 140 knots",
+        "Cruise power set (23/2300)",
+        "Trim adjusted for hands-off flight",
+        "Cowl flaps closed for cruise",
+        "Stable cruise established",
+        "Ready for maneuvers"
+      ]
+    },
+    {
+      "name": "Level_Flight",
+      "prompt": "Practice maintaining level flight and feel Baron stability.",
+      "steps": [
+        "Level flight: 'Maintain 3,500 feet, heading 090, 140 knots. Just straight and level flight - feel the Baron'",
+        "Baron stability: 'Notice: Baron is very stable. Small control inputs. Not twitchy like lighter aircraft. Once trimmed, tends to stay where you put it. This is heavier aircraft characteristic - more inertia, more stability'",
+        "Small corrections: 'For altitude: small pitch corrections. Baron has momentum - small inputs, wait for response. If 50 feet high: tiny nose-down correction, wait. If 50 feet low: tiny nose-up correction, wait. Let airplane respond'",
+        "Heading: 'For heading: small bank corrections. If 5 degrees off: small bank to correct, return wings level on heading. Baron responds smoothly'",
+        "Trim: 'Trim is your friend. Any persistent yoke pressure: trim it out. Baron should fly hands-off when properly trimmed. Re-trim after any power or configuration change'",
+        "Scan: 'Scan instruments systematically: Altimeter (altitude), Attitude indicator (pitch and bank), Heading, Airspeed, VSI (trend). Outside: look for traffic, maintain visual awareness. Inside-outside scan'",
+        "Engine monitoring: 'Scan both engines periodically: Both manifold pressures 23 inches, Both RPMs 2,300, Fuel flow adequate both sides, All temps and pressures green arcs. Quick scan - takes seconds'",
+        "Practice: 'Practice level flight for 2 minutes. I will give you feedback on altitude and heading control. Small corrections, smooth inputs'",
+        "Monitor and provide feedback on performance",
+        "Assessment: 'Level flight: [performance assessment]. Baron is stable platform. With practice you will hold altitude and heading precisely. Doing well for first flight'",
+        "Ask: 'Questions about level flight or Baron feel?'",
+        "Next: 'Now practice turns'"
+      ],
+      "goals": [
+        "Level flight 3,500 ft, 140 kts maintained",
+        "Baron stability felt and discussed",
+        "Small corrections technique taught",
+        "Trim usage emphasized",
+        "Scan pattern taught",
+        "Engine monitoring practiced",
+        "Performance assessed positively",
+        "Ready for turns"
+      ]
+    },
+    {
+      "name": "Basic_Turns",
+      "prompt": "Practice coordinated turns with heavier aircraft.",
+      "steps": [
+        "Turns introduction: 'Practice coordinated turns. Baron is heavier - turns feel different from lighter aircraft. More stable, less quick'",
+        "Medium bank turn: 'Turn left heading 090 to 270 - 180 degree turn. Use 30 degree bank. Roll into 30 degree bank smoothly, hold bank, altitude 3,500 feet constant. Baron needs slight back pressure in turn to maintain altitude - this is normal, increase lift to compensate for bank'",
+        "Coordination: 'Keep ball centered - coordinated flight. Step on ball if it moves off center. Baron with two engines must be coordinated - any slip/skid creates asymmetric drag'",
+        "Monitor turn: 'Turning through 120... 150... 180... approaching 270. At 260 begin rollout: reduce bank smoothly to wings level on heading 270. Small lead required because Baron has momentum'",
+        "Assessment: 'Turn complete - heading [X], altitude [Y]. [Performance feedback]. In Baron: smoother turns, more stable, more inertia to overcome for bank changes'",
+        "Right turn: 'Now turn right heading 270 to 090 - back to original heading. 30 degree bank right, maintain altitude, coordinated'",
+        "Execute and monitor",
+        "Shallow turn: 'Try shallower 15 degree bank turn. Turn right heading 090 to 180. Shallow bank - less back pressure needed, gentler turn. Baron very stable in shallow turns'",
+        "Execute and monitor",
+        "Steeper turn: 'Try 45 degree bank turn - steeper. Turn left heading 180 to 090. 45 degree bank requires more back pressure to maintain altitude. More G-force - seat pressure increases. Coordinated, altitude constant'",
+        "Execute and monitor",
+        "Turns review: 'You practiced turns at different bank angles. Baron turns smoothly, stable, predictable. Key points: Back pressure in turns maintains altitude, Coordination critical (ball centered), Lead rollout because of inertia, Heavier feel than lighter aircraft'",
+        "Ask: 'How do Baron turns feel compared to lighter aircraft?'",
+        "Next: 'Practice climbs and descents with power management'"
+      ],
+      "goals": [
+        "180° turn at 30° bank executed",
+        "Coordination emphasized (ball centered)",
+        "Altitude maintenance in turns coached",
+        "Return turn executed",
+        "Shallow turn (15°) practiced",
+        "Steeper turn (45°) practiced",
+        "Baron turn characteristics felt",
+        "Performance feedback provided",
+        "Ready for climbs/descents"
+      ]
+    },
+    {
+      "name": "Climbs_Descents",
+      "prompt": "Practice climbs and descents with power management.",
+      "steps": [
+        "Power management: 'Baron has three controls per engine - throttle, prop, mixture. For power changes: sequence matters. Remember from systems: increasing power = props forward first, then throttles. Decreasing power = throttles back first, then props. This prevents oversquare operation'",
+        "Climb setup: 'Climb from 3,500 to 4,500 feet at 105 knots. Climb procedure: Props full forward first (2,700 RPM), then throttles full forward (full power), pitch up to establish 105 knots climb'",
+        "Execute: 'Props forward, throttles forward. Pitch up - target 10 degrees nose up, adjust to hold 105 knots. Climbing at 1,200+ FPM'",
+        "Monitor climb: 'Climbing through 3,800... 4,000... 4,200... Watch engine temps - CHT climbing but should stay green. If CHT high: can open cowl flaps or reduce power slightly'",
+        "Level off: 'Approaching 4,500 feet. At 4,450 begin leveloff: pitch down to level attitude, let speed build, passing 120... 130... At 140 knots: reduce power. Throttles back to 23 inches first, then props back to 2,300 RPM. Power sequence correct. Level 4,500 feet, 140 knots. Trim'",
+        "Descent setup: 'Descend from 4,500 to 3,500 feet at 140 knots. Descent procedure: Throttles back to approximately 18 inches (reduce power first), then props back to 2,200 RPM if desired for quieter descent, pitch down to establish 500-700 FPM descent maintaining 140 knots'",
+        "Execute: 'Throttles back, props back optional. Pitch down - approximately 2-3 degrees nose down, adjust to hold 140 knots and 500-700 FPM descent'",
+        "Monitor descent: 'Descending through 4,200... 4,000... 3,800... Smooth steady descent. Watch airspeed - don't exceed 152 knots (Vno - normal operations speed)'",
+        "Level off: 'Approaching 3,500 feet. At 3,550 begin leveloff: pitch up to level attitude, simultaneously add power. Throttles forward to 23 inches, props forward to 2,300 RPM. Level 3,500 feet, 140 knots. Trim'",
+        "Power management review: 'You practiced power changes properly: Increasing power - props then throttles. Decreasing power - throttles then props. This is critical Baron technique preventing engine stress. Good work'",
+        "Baron characteristics: 'Baron climbs well with 600 HP, descends smoothly, stable throughout. Power changes affect aircraft smoothly. More stable than lighter aircraft - takes time to adjust but very controllable'",
+        "Ask: 'Questions about power management or climbs/descents?'",
+        "Next: 'Return to KSFO for traffic pattern and landing'"
+      ],
+      "goals": [
+        "Power change sequences taught (props first up, throttles first down)",
+        "Climb 3,500 to 4,500 executed",
+        "105 knots climb speed maintained",
+        "Leveloff from climb executed",
+        "Descent 4,500 to 3,500 executed",
+        "140 knots descent speed maintained",
+        "Leveloff from descent executed",
+        "Power management practiced correctly",
+        "Baron characteristics discussed",
+        "Ready for pattern"
+      ]
+    },
+    {
+      "name": "Pattern_Entry",
+      "prompt": "Guide pattern entry and pattern configuration.",
+      "steps": [
+        "Return: 'Maneuvers complete, return to KSFO for landing. Contact tower for pattern entry'",
+        "Position: 'We are [position relative to KSFO]. Request [entry type - straight-in, 45 to downwind, etc.] for runway [active runway]'",
+        "Cleared: 'Cleared to enter [as assigned]. Descend to pattern altitude 1,500 feet AGL (approximately 1,500 feet MSL at KSFO)'",
+        "Descent: 'Descend to 1,500 feet, slow to 120 knots pattern speed. Throttles back, props back to 2,200 for pattern operations. Descending and slowing'",
+        "Pattern speed: 'Level 1,500 feet, slowing to 120 knots. This is pattern speed - comfortable speed for turns and configuration changes. Trim for 120 knots'",
+        "Before landing: 'Before landing checklist: Fuel boost pumps ON (backup for landing). Mixture full rich (full power available for go-around). Props full forward (2,700 RPM - maximum thrust available)'",
+        "Downwind: 'Entering downwind parallel to runway. Altitude 1,500 feet, speed 120 knots. Position abeam landing runway on downwind'",
+        "Downwind checks: 'Abeam touchdown point downwind: Landing gear DOWN - lower gear lever. Three green lights - gear down and locked. Verify three green lights before continuing. Flaps APPROACH (partially extended). Speed maintain 110 knots with gear and flaps'",
+        "Configuration: 'Baron configured: Gear down and locked (three green), Flaps approach, Power set for 110 knots on downwind, Props forward, Mixtures rich, Boost pumps on. Ready for pattern'",
+        "Pattern flow: 'Downwind → base turn → final approach → landing. I guide you through each segment. Focus on smooth flying, I call configurations and speeds'",
+        "Ask: 'Questions about pattern entry or configuration?'",
+        "Next: 'Turn base, then final approach'"
+      ],
+      "goals": [
+        "Pattern entry coordinated with tower",
+        "Descent to pattern altitude 1,500 ft",
+        "Pattern speed 120 knots established",
+        "Before landing checks completed",
+        "Downwind entered properly",
+        "Landing gear extended (three green verified)",
+        "Flaps approach extended",
+        "110 knots downwind maintained",
+        "Configuration complete and verified",
+        "Ready for base turn"
+      ]
+    },
+    {
+      "name": "Landing_Approach",
+      "prompt": "Guide approach with continuous coaching.",
+      "steps": [
+        "Base turn: 'Turn base - 90 degree left turn from downwind to base leg. 30 degree bank, smooth turn. Watch for runway - judge when to turn final'",
+        "Base leg: 'On base leg. Altitude 1,200-1,400 feet descending, speed 100 knots. Reduce power slightly, descend gradually toward final approach'",
+        "Final turn: 'Turn final - turn to align with runway centerline. Look for runway, start turn when runway appears approximately 45 degrees off nose. Smooth turn to final'",
+        "Final approach: 'On final approach aligned with runway. We will descend on final to landing. Target: 3-degree glidepath, 90-95 knots, touchdown in first third of runway'",
+        "Speed: 'Slow to 90 knots on final. This is final approach speed. Power approximately 18-20 inches manifold pressure to maintain glidepath and 90 knots. Small power adjustments'",
+        "Glidepath: 'Descending on glidepath. Aim point: first third of runway. If too high: reduce power slightly, let sink rate increase. If too low: add power, reduce sink rate. Small power corrections, smooth descent'",
+        "VASI/PAPI: 'If VASI or PAPI lights available: two white = on glidepath. Adjust as needed. Visual approach - judge glidepath by runway picture'",
+        "Flaps full: 'At 500 feet AGL: Flaps FULL DOWN (fully extended). This increases drag and slows airplane, allows steeper descent. Pitch down slightly to maintain 90 knots with full flaps'",
+        "Short final: 'Short final - runway approaching. Maintain 90 knots, stay on glidepath. Runway getting larger, aim point steady'",
+        "Coaching: 'Little power adjustment... slight pitch correction... looking good... on glidepath... on speed... continue'",
+        "50 feet: 'Crossing threshold 50 feet, 85 knots - good energy. Begin roundout - gradually pitch up, start reducing power'",
+        "Ask: 'Feeling comfortable with approach?'",
+        "Next: 'Landing!'"
+      ],
+      "goals": [
+        "Base turn executed smoothly",
+        "Base leg flown (descending, slowing)",
+        "Final turn aligned with runway",
+        "Final approach established",
+        "90 knots final approach speed achieved",
+        "Glidepath maintained with power",
+        "Flaps full extended at 500 ft AGL",
+        "Short final stable (speed, glidepath)",
+        "Threshold crossed 50 ft, 85 knots",
+        "Roundout initiated",
+        "Ready for landing"
+      ]
+    },
+    {
+      "name": "Landing",
+      "prompt": "Guide landing with continuous coaching.",
+      "steps": [
+        "Roundout: 'Roundout - pitch up gradually, reduce power to idle. Throttles idle, hold airplane off runway, let speed bleed off'",
+        "Flare: 'Flare - hold airplane off runway in landing attitude. Nose up, main wheels will touch first. Baron settles with weight, let it down smoothly'",
+        "Touchdown: 'Main wheels touchdown - nose still up. Hold nose off, aerodynamic braking. Let nose wheel down gently as speed decreases'",
+        "Rollout: 'Rollout - nose wheel down, directional control with rudder. Baron tracks straight, stable. Slight braking as needed, don't overbrake'",
+        "Assessment: 'Landing complete! You landed the Baron! [Assessment: smooth, on centerline, good speed control, etc.]. First Baron landing - excellent!'",
+        "Celebrate: 'You just landed a 5,500 lb twin-engine aircraft! That is significant accomplishment!'",
+        "After landing: 'After landing: Flaps UP, Cowl flaps OPEN, Fuel boost pumps OFF, Transponder STANDBY'",
+        "Taxi: 'Taxi clear of runway, contact ground control. First Baron flight complete!'",
+        "Ask: 'How did landing feel? Heavier than lighter aircraft?'",
+        "Debrief: 'Let's debrief this first flight'"
+      ],
+      "goals": [
+        "Roundout executed with power reduction",
+        "Flare held with nose up",
+        "Main gear touchdown achieved",
+        "Nose wheel lowered gently",
+        "Rollout controlled",
+        "First Baron landing completed!",
+        "After landing procedures completed",
+        "Runway cleared safely",
+        "Celebration and excitement!",
+        "Ready for debrief"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Debrief first flight, celebrate Module 1 completion!",
+      "steps": [
+        "Complete: 'Challenge 1.4 - First Flight Supervised complete! MODULE 1 COMPLETE!'",
+        "First flight: 'You just completed your first Baron flight: Takeoff - smooth rotation and climb. Initial climb - proper cleanup and power management. Level flight - felt Baron stability. Turns - coordinated turns at various banks. Climbs and descents - proper power management sequences. Pattern - proper entry and configuration. Approach - stable final approach. Landing - successful first landing in Baron!'",
+        "Performance: 'Overall performance assessment: [specific feedback on what went well]. For first flight in heavier twin: [assessment]. You demonstrated: ability to control Baron, responsiveness to coaching, smooth improving throughout flight, safe operations. Very good first flight!'",
+        "Baron characteristics: 'You experienced Baron characteristics: Heavier and more stable than lighter aircraft, Faster speeds throughout flight, More powerful - 600 HP climbs well, More inertia - smoother but slower responses, Solid platform for instrument flying, Professional-level aircraft. Takes adjustment time but you handled it well'",
+        "What's next: 'Module 1 complete - you know Baron systems, cockpit, ground operations, and basic flight. Module 2 - Baron Flight Operations: Normal takeoffs and landings refined, Power management mastery, Weight and balance understanding, Advanced operations (short field, crosswinds, night, IFR intro). Flying becomes more independent - less supervision, more capability'",
+        "Module 1 achievement: 'MODULE 1 COMPLETE! Challenge 1.1 Cockpit Familiarization ✓, Challenge 1.2 Systems Deep Dive ✓, Challenge 1.3 Ground Operations ✓, Challenge 1.4 First Flight Supervised ✓. You have solid Baron foundation!'",
+        "Course progress: 'Total course progress: 4/11 challenges complete - 36.4%! Over one-third complete!'",
+        "Preview Module 2: 'Module 2 has 4 challenges: 2.1 Takeoff and Landing Normal - refining techniques independently. 2.2 Power Management - cruise performance and efficiency. 2.3 Weight and Balance Performance - calculations and limitations. 2.4 Advanced Operations - short field, crosswinds, night, IFR. You fly more, I coach less'",
+        "Study: 'Before Module 2: Review: Takeoff and landing procedures, Power management sequences (props then throttles up, throttles then props down), Pattern procedures and speeds, Baron characteristics you felt today. This reinforces learning'",
+        "Celebrate: 'Congratulations on first Baron flight! You took off, maneuvered, and landed a professional twin-engine aircraft. MODULE 1 COMPLETE! This is real achievement!'",
+        "Questions: 'Questions about today's flight or what comes next in Module 2?'",
+        "Encouragement: 'You are officially Baron pilot! Continue practicing, building confidence, and expanding capabilities. Well done!'"
+      ],
+      "goals": [
+        "Challenge 1.4 completed celebrated",
+        "MODULE 1 COMPLETE celebrated! 🎉",
+        "Complete first flight recapped",
+        "Performance assessed positively and specifically",
+        "Baron characteristics reviewed",
+        "Module 2 previewed (more independent flying)",
+        "Module 1 achievement recognized (4/4 challenges)",
+        "Course progress noted (4/11 = 36.4%)",
+        "Module 2 challenges previewed",
+        "Study recommendations provided",
+        "Major milestone celebrated appropriately",
+        "Student confidence built for Module 2"
+      ]
+    }
+  ]
+}

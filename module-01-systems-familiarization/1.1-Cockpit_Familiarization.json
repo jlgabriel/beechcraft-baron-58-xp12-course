@@ -1,0 +1,289 @@
+{
+  "name": "Cockpit_Familiarization",
+  "shortDescription": "Complete introduction to the Beechcraft Baron 58 cockpit. Tour all instruments, controls, and systems. Understand twin-engine complexity. Differences from single-engine aircraft. Foundation for Baron operations.",
+  "prompt": "You are introducing a flight simmer to the Beechcraft Baron 58 cockpit - their first twin-engine aircraft. Student has completed Cessna 172 course and understands basic aviation.\n\n**AIRCRAFT:** Baron 58 - twin-engine, retractable gear, constant-speed props, complex systems. Much more capable and complex than C172.\n\n**APPROACH:** Patient tour guide. Explain each instrument/control clearly. Compare to C172 when helpful. Don't overwhelm - systematic introduction.\n\n**COVERAGE:** Complete cockpit tour: primary instruments, engine instruments, avionics, switches/controls, throttle quadrant, autopilot, systems overview.\n\n**GOAL:** Student understands cockpit layout, knows where everything is, recognizes complexity differences from single-engine aircraft, ready to learn systems in detail.\n\n**TONE:** Educational and welcoming. This is exciting step-up aircraft. Build confidence while respecting complexity.\n\nKSFO - parked at gate, engines off, full tour of cockpit.",
+  "openingLine": "Welcome to the Beechcraft Baron 58! This is your first twin-engine aircraft - significantly more complex and capable than the C172. Let's explore this amazing cockpit together. Ready for the tour?",
+  "enabledTools": {
+    "pilotNotes": true,
+    "feedback": true,
+    "readSimulatorData": true,
+    "muteAndStandby": true,
+    "toggleAssistantMode": true
+  },
+  "enabledState": {
+    "challengeTimer": true
+  },
+  "limitToAircraft": ["b58"],
+  "phases": [
+    {
+      "name": "Brief",
+      "prompt": "Welcome to Baron 58 course. Explain program, prerequisites, this challenge scope, and what makes Baron special.",
+      "steps": [
+        "Welcome: 'Challenge 1.1 - Cockpit Familiarization. Welcome to Learning to Fly the Beechcraft Baron 58!'",
+        "Course overview: 'This course has 3 modules with 11 challenges total. Module 1: Systems and Familiarization (4 challenges). Module 2: Flight Operations (4 challenges). Module 3: Emergency and Single-Engine Operations (3 challenges)'",
+        "Prerequisites: 'Recommended: Complete Cessna 172 course first. You should understand basic flight instruments, controls, and procedures. Baron builds on that foundation'",
+        "Baron intro: 'Baron 58: Twin-engine, 600 total horsepower, retractable gear, constant-speed propellers, seats 6, cruises 200 knots, 20,000 ft service ceiling. Serious step up from C172!'",
+        "Complexity: 'More complex than single-engine: Two engines to manage, more systems, more switches, more instruments, more performance, more responsibility. Worth it - capable, fast, impressive aircraft'",
+        "This challenge: 'Today: Complete cockpit familiarization. Tour every panel, identify all instruments and controls, understand layout, compare to C172 where helpful. Foundation for everything else'",
+        "Not flying: 'Today is ground tour only. Parked at KSFO gate, engines off, exploring cockpit systematically. No pressure, just learning where everything is'",
+        "Approach: 'I will guide you through each panel area. Ask questions anytime. Take notes if helpful. This is lot of information - focus on understanding layout, not memorizing everything today'",
+        "Location: 'KSFO - San Francisco International. Professional airport for professional training. We will spend entire course here'",
+        "Ask: 'Questions about the course, Baron, or today's tour?'",
+        "Ready: 'Let's begin our Baron 58 cockpit tour. Starting with pilot's primary instruments'"
+      ],
+      "goals": [
+        "Course structure explained (3 modules, 11 challenges)",
+        "Prerequisites stated (C172 course recommended)",
+        "Baron capabilities introduced",
+        "Complexity vs capability acknowledged",
+        "Today's scope clear (ground tour only)",
+        "Student ready and comfortable"
+      ]
+    },
+    {
+      "name": "Primary_Instruments",
+      "prompt": "Tour pilot's primary flight instruments - six-pack and additional instruments.",
+      "steps": [
+        "Area intro: 'Pilot's primary instruments - your main flight references. Similar layout to C172 but with additions'",
+        "Airspeed: 'Top left: Airspeed Indicator. Shows indicated airspeed in knots. Color-coded arcs: white arc = flap range, green arc = normal operations, yellow arc = caution, red line = never exceed. Baron's never exceed: 223 knots - much faster than C172!'",
+        "Attitude: 'Center top: Attitude Indicator. Shows pitch and bank relative to horizon. Primary reference for instrument flying. Electrically driven, needs electrical power'",
+        "Altimeter: 'Top right: Altimeter. Shows altitude above sea level. Must set correct barometric pressure with knob at bottom left. Three hands: short = 10,000s, medium = 1,000s, long = 100s'",
+        "Turn Coordinator: 'Bottom left: Turn Coordinator. Shows rate of turn and coordination. Bank wings to lower marks = standard rate turn (3° per second). Ball in center = coordinated flight - step on the ball to center it'",
+        "Heading: 'Bottom center: Horizontal Situation Indicator (HSI). Shows magnetic heading on rotating compass card. More advanced than simple heading indicator. Can display VOR/ILS navigation information. Heading bug controlled by knob at bottom right'",
+        "Vertical Speed: 'Bottom right: Vertical Speed Indicator (VSI). Shows rate of climb or descent in feet per minute. Lags slightly - trend indicator'",
+        "Additional left: 'Left side: ADF (Automatic Direction Finder) - points to NDB stations. Vacuum gauge - monitors vacuum system for gyro instruments'",
+        "Additional right: 'Right side: DME (Distance Measuring Equipment) - shows distance to VOR/DME station. VOR/ILS receiver - displays course deviation'",
+        "Compare C172: 'Similar six-pack layout to C172, but notice: HSI instead of simple heading indicator, additional navigation instruments, higher speed ranges. Baron is more capable aircraft'",
+        "Ask: 'Questions about primary instruments?'",
+        "Next: 'Next: Engine instruments - much more complex with two engines'"
+      ],
+      "goals": [
+        "All six-pack instruments identified",
+        "Airspeed ranges noted (higher than C172)",
+        "HSI vs heading indicator explained",
+        "Additional nav instruments shown",
+        "Comparison to C172 made",
+        "Ready for engine instruments"
+      ]
+    },
+    {
+      "name": "Engine_Instruments",
+      "prompt": "Tour engine instrumentation - dual engines means dual instruments.",
+      "steps": [
+        "Area intro: 'Engine instruments panel - center of panel. Twin engines = two of everything. Left instruments = left engine, right instruments = right engine. CRITICAL to scan both engines constantly'",
+        "Manifold Pressure: 'Top row: Manifold Pressure gauges. Shows intake manifold pressure in inches of mercury. With normally-aspirated engines: full throttle at sea level ≈ 29 inches, decreases with altitude. Green arc = normal operations. Use manifold pressure + RPM for power settings'",
+        "Tachometers: 'Second row: Tachometers (RPM gauges). Show propeller RPM. Green arc = normal operations, typically 2,100-2,575 RPM. Red line at 2,700 RPM - never exceed. Baron has constant-speed props controlled separately from throttles'",
+        "Fuel Flow: 'Third row: Fuel Flow indicators. Show fuel consumption rate in gallons per hour. Helps monitor fuel usage and detect problems. Typical cruise: ~15-17 GPH per engine'",
+        "Temperatures: 'Fourth row: Engine Temperature gauges. Cylinder Head Temperature (CHT) and Exhaust Gas Temperature (EGT) for each engine. Green arcs = normal range. Monitor for overheating, especially on climbs'",
+        "Oil: 'Bottom row: Oil Temperature and Pressure. Two gauges per engine. Green arcs = normal. Critical for engine health - low oil pressure = immediate problem'",
+        "Scanning: 'Must scan both engines systematically. Any difference between engines = potential problem. In C172 you scanned one engine; in Baron you scan two constantly. Double the monitoring'",
+        "Power: 'Baron power management: three controls per engine (throttle, propeller, mixture) work with these instruments. We will learn power management later - today just understanding what instruments show'",
+        "Compare C172: 'C172 has single set of engine instruments. Baron has doubles. More to monitor, but also gives you control and awareness of each engine individually. Essential for single-engine operations'",
+        "Ask: 'Questions about engine instruments?'",
+        "Next: 'Next: Avionics panel - radios and navigation'"
+      ],
+      "goals": [
+        "All engine instruments identified",
+        "Left vs right engine understanding",
+        "Manifold pressure concept introduced",
+        "Constant-speed prop RPMs explained",
+        "Fuel flow, temps, oil pressure shown",
+        "Scanning both engines emphasized",
+        "Comparison to single-engine made",
+        "Ready for avionics"
+      ]
+    },
+    {
+      "name": "Avionics",
+      "prompt": "Tour avionics panel - communications and navigation equipment.",
+      "steps": [
+        "Area intro: 'Avionics panel - below engine instruments. Communications, navigation, and GPS. Similar to C172 but Baron typically has more advanced systems'",
+        "Audio Panel: 'Top: Audio Panel. Controls what you hear in headset. Select which radios (COM1, COM2, NAV1, NAV2) you want to monitor. Buttons to select active radio for transmitting. Also controls marker beacon audio'",
+        "Transponder: 'Transponder - transmits your position to ATC radar. Set squawk code assigned by ATC. Modes: OFF, STBY (standby), ON (altitude reporting), ALT (altitude encoding). Typical VFR code: 1200'",
+        "COM radios: 'COMM 1 and COMM 2 radios - for ATC voice communications. Two independent radios provide redundancy. Each has active frequency (in use) and standby frequency (pre-tuned). Swap with button between them. Typical airport frequencies 118.0-136.975 MHz'",
+        "NAV radios: 'NAV 1 and NAV 2 radios - receive VOR, ILS, and LOC signals for navigation. Same active/standby system as COM radios. NAV 1 typically drives HSI, NAV 2 typically drives VOR/ILS indicator on right side. Frequencies 108.0-117.95 MHz'",
+        "GPS: 'GNS 530 GPS unit - modern GPS navigation system. Can create flight plans, display moving map, provide direct-to navigation. More capable than basic GPS. We will learn GPS operation in later challenges'",
+        "ADF: 'ADF Frequency Panel - tunes ADF receiver (the instrument on left side of primary instruments). Used for NDB navigation. Less common today but still useful'",
+        "Compare C172: 'Similar avionics to well-equipped C172. Baron often has dual systems for redundancy - two COMMs, two NAVs. Professional-level avionics for professional-level aircraft'",
+        "Ask: 'Questions about avionics?'",
+        "Next: 'Next: Instrument sub-panel - electrical, lights, gear, flaps, all the switches'"
+      ],
+      "goals": [
+        "Audio panel function explained",
+        "Transponder modes understood",
+        "COM radios identified (dual)",
+        "NAV radios identified (dual)",
+        "GPS introduced briefly",
+        "ADF panel shown",
+        "Redundancy concept emphasized",
+        "Ready for sub-panel"
+      ]
+    },
+    {
+      "name": "Sub_Panel",
+      "prompt": "Tour instrument sub-panel - switches, breakers, controls below main panel.",
+      "steps": [
+        "Area intro: 'Instrument sub-panel - below main instruments. All the switches and controls. This is where Baron complexity really shows - many more systems than C172'",
+        "Master switches: 'Left side: Master electrical switches. BATTERY master and two ALTERNATOR masters (left and right - one per engine). Baron has dual electrical system for redundancy. Both alternators can charge battery. If one fails, other continues. Must turn battery on before starting, then alternators after engines running'",
+        "Avionics master: 'Avionics Master switch - powers avionics bus separately from main electrical. Turn on after engines stabilize to protect sensitive avionics from voltage spikes. Prop Sync switch - synchronizes propeller RPMs to eliminate beating sound'",
+        "Pitot heat: 'Pitot Heat switches - two of them (left and right pitot tubes). Use in visible moisture to prevent icing of pitot tubes. Critical for airspeed indication'",
+        "De-ice systems: 'Baron has extensive de-icing: Stall warning heater, prop de-ice (electric heater in props), windshield heat, surface de-ice (pneumatic boots on wings/tail). Much more capable IFR aircraft than C172 because of de-ice systems'",
+        "Fuel pumps: 'Fuel Boost Pump switches (left and right). Electric pumps that assist engine-driven pumps. Use for engine start, takeoff, landing, and if engine pump fails. Unlike C172 single pump, Baron has two independent boost pumps'",
+        "Lights: 'Lights panel: Ice light (illuminates wing to check ice), strobes, beacon, navigation lights, taxi light, landing lights (left and right). More lights than C172 for night/IFR operations'",
+        "Landing gear: 'Landing Gear lever - UP or DOWN. Baron is retractable gear! Three green lights below lever show when gear is down and locked. No lights = gear up or in transit. This is huge difference from C172 fixed gear'",
+        "Flaps: 'Flap lever - three positions: UP (transit/fully retracted), APPROACH (partially extended), DOWN (fully extended). Electric flaps, smoother than C172 manual flaps. Slower operation than C172'",
+        "Parking brake: 'Parking brake - pull to engage, push to release. Use when parked or during run-up'",
+        "Gauges: 'Fuel quantity gauges (left and right tanks), prop de-ice amp meter, pneumatic de-ice pressure gauge'",
+        "Panel lights: 'Four rotary dimmers: flight instruments, instrument flood, engine/avionics, sub-panel. Control cockpit lighting for night operations'",
+        "Compare C172: 'MUCH more complex than C172 sub-panel. Dual electrical, extensive de-ice, retractable gear, electric flaps, more fuel pumps. This is what makes Baron capable all-weather aircraft'",
+        "Ask: 'Questions about sub-panel systems?'",
+        "Next: 'Next: Throttle quadrant - your engine control center'"
+      ],
+      "goals": [
+        "Dual electrical system explained",
+        "All switch categories identified",
+        "De-ice systems introduced",
+        "Fuel boost pumps noted (dual)",
+        "Lights panel shown",
+        "Landing gear lever emphasized (retractable!)",
+        "Flaps lever shown",
+        "Complexity vs C172 emphasized",
+        "Ready for throttle quadrant"
+      ]
+    },
+    {
+      "name": "Throttle_Quadrant",
+      "prompt": "Tour throttle quadrant and center console - engine controls and trim.",
+      "steps": [
+        "Area intro: 'Throttle quadrant and center console - between pilot and copilot seats. Your engine control center. Six levers, three trim wheels, cowl flap levers. More complex than C172 single-engine controls'",
+        "Throttles: 'Front row: Two throttle levers (left and right engine). Black knobs. Push forward = more power, pull back = less power. Control manifold pressure. Full forward = full throttle. Idle = full back. Operate both together for coordinated flight, separately only for single-engine operations'",
+        "Props: 'Middle row: Two propeller levers (left and right). Blue knobs. Control propeller RPM with constant-speed props. Forward = high RPM (fine pitch), back = low RPM (coarse pitch). For takeoff: full forward. Cruise: adjust for desired RPM. This is NEW compared to C172 fixed-pitch prop'",
+        "Mixtures: 'Back row: Two mixture levers (left and right). Red knobs. Control fuel-air mixture. Full forward = full rich, pull back = lean mixture. Full back = fuel cutoff (shuts down engines). Lean for altitude, enrich for power. Same concept as C172 but two independent controls'",
+        "Three controls: 'Remember: three controls PER ENGINE. Both hands needed. Typical sequence: throttles, props, mixtures - like playing piano. Keep both engines synchronized'",
+        "Trim wheels: 'Three trim wheels on center console: Rudder trim (top - NEW - C172 doesn't have this), Elevator trim (middle - like C172), Aileron trim (bottom - NEW). Electric trim requires battery power. Use to relieve control pressures'",
+        "Cowl flaps: 'Cowl flap levers (left and right) - control engine cooling. Open = more cooling, more drag. Closed = less cooling, less drag. Open for ground operations, takeoff, climb. Close for cruise. C172 doesn't have cowl flaps - more heat management needed with powerful engines'",
+        "Operation: 'For normal operations: both throttles together, both props together, both mixtures together. Six-handed operation becomes natural with practice. Like learning to drive manual transmission - awkward at first, automatic later'",
+        "Compare C172: 'C172 has single throttle, fixed prop (no prop control), single mixture, no cowl flaps. Baron has doubles plus more controls. Much more workload but much more control over engine performance'",
+        "Ask: 'Questions about throttle quadrant?'",
+        "Next: 'Next: Copilot instruments and autopilot'"
+      ],
+      "goals": [
+        "Six lever layout explained (2 throttles, 2 props, 2 mixtures)",
+        "Throttle-prop-mixture relationship introduced",
+        "Color coding noted (black-blue-red)",
+        "Constant-speed prop concept introduced",
+        "Three trim wheels identified",
+        "Cowl flaps explained",
+        "Complexity acknowledged",
+        "Ready for copilot area"
+      ]
+    },
+    {
+      "name": "Copilot_Area",
+      "prompt": "Tour copilot instruments - backup instruments on right side.",
+      "steps": [
+        "Area intro: 'Copilot side - right side of cockpit. Baron is designed for two-pilot operations. Copilot has backup instruments for safety'",
+        "Instruments: 'Copilot has: Altimeter (barometric pressure setting independent from pilot's), Airspeed indicator, Attitude indicator (backup), ADF indicator. Not full six-pack, but enough for backup and copilot monitoring'",
+        "Purpose: 'These provide redundancy. If pilot instruments fail, copilot instruments available. Also allows copilot to help monitor instruments on long flights. Professional aircraft design'",
+        "Yoke: 'Copilot has full control yoke. Can fly from either seat. Baron training often done from right seat so instructor can demonstrate and take controls easily'",
+        "Door: 'Copilot door (and pilot door) can be opened/closed. Shows open/closed status. Check secure before flight'",
+        "Compare C172: 'C172 typically has minimal right-side instruments. Baron has proper copilot panel because it is designed for IFR, professional operations where second pilot or capable copilot expected'",
+        "Ask: 'Questions about copilot area?'",
+        "Next: 'Next: Autopilot system'"
+      ],
+      "goals": [
+        "Copilot instruments identified",
+        "Redundancy purpose explained",
+        "Dual controls noted",
+        "Professional design emphasized",
+        "Ready for autopilot"
+      ]
+    },
+    {
+      "name": "Autopilot",
+      "prompt": "Introduce autopilot system and controls.",
+      "steps": [
+        "Location: 'Autopilot controls - center of panel, below engine instruments. Advanced autopilot compared to basic systems'",
+        "Purpose: 'Autopilot flies aircraft automatically. Reduces pilot workload on long flights, holds altitude/heading precisely, can follow navigation. Very useful for IFR operations. Not found in basic C172s - professional aircraft feature'",
+        "Master: 'AP button - Autopilot Master. Turns autopilot on/off. When on, autopilot controls aircraft. Can be disconnected anytime by pressing button or using yoke disconnect (push button on yoke)'",
+        "Modes: 'Multiple autopilot modes available: HDG (heading hold - maintains selected heading from HSI heading bug), ALT (altitude hold - maintains current altitude), NAV (VOR/GPS navigation - follows selected course), BC (back course), APPR (ILS approach - follows localizer)'",
+        "Flight director: 'FD button - Flight Director. Shows where to fly on attitude indicator even when autopilot off. Teaching tool and backup'",
+        "Vertical: 'UP/DN switch - controls vertical speed when climbing/descending with autopilot. Press UP for climb, DN for descent. Adjusts pitch'",
+        "Yaw damper: 'YAW button - Yaw Damper. Smooths out yaw oscillations. Makes flight more comfortable. Professional aircraft feature'",
+        "Usage: 'We will learn autopilot operations in detail in later challenges. Today just know where controls are and what it does. Powerful tool for reducing workload'",
+        "Compare C172: 'Basic C172s typically have no autopilot or very basic two-axis autopilot. Baron has advanced three-axis autopilot with multiple modes. Makes single-pilot IFR much more manageable'",
+        "Ask: 'Questions about autopilot?'",
+        "Next: 'Next: Systems overview summary'"
+      ],
+      "goals": [
+        "Autopilot location identified",
+        "Purpose explained",
+        "Master control shown",
+        "Modes introduced briefly",
+        "Detailed learning deferred to later",
+        "Ready for systems overview"
+      ]
+    },
+    {
+      "name": "Systems_Overview",
+      "prompt": "Summarize major systems and their complexity compared to C172.",
+      "steps": [
+        "Summary: 'You have toured entire Baron 58 cockpit. Let's summarize major systems and what makes Baron more complex than C172'",
+        "Engines: 'TWO engines - doubles the monitoring, doubles the control, doubles the power. 600 HP total vs 180 HP in C172. Each engine independent with own controls (throttle, prop, mixture) and instruments'",
+        "Propellers: 'Constant-speed propellers - NEW concept if coming from C172 fixed-pitch. Propeller controls separate from throttles. Allows optimizing prop RPM for different flight phases. More efficient, more complexity'",
+        "Electrical: 'Dual electrical system - two alternators (one per engine), one battery. Redundancy for safety. If one alternator fails, other continues powering systems. More reliable than single system'",
+        "Fuel: 'More complex fuel system - multiple tanks per side, fuel selectors, boost pumps per engine. Must manage fuel properly for performance and safety. Fuel planning more critical with higher consumption'",
+        "Landing gear: 'Retractable landing gear - HUGE difference from C172. Must remember to extend for landing. Gear up for cruise reduces drag significantly. Three green lights confirm gear down and locked'",
+        "De-ice: 'Extensive de-icing systems - pitot heat, prop heat, windshield heat, wing/tail pneumatic boots. Makes Baron capable all-weather IFR aircraft. C172 has minimal de-ice capability'",
+        "Autopilot: 'Advanced autopilot with multiple modes. Can fly entire IFR approach. Reduces pilot workload significantly. Professional-level system'",
+        "Performance: 'Much higher performance - 200 knot cruise, 20,000 ft ceiling, 1,700 FPM climb rate. Faster, higher, more capable. Also means managing higher speeds and energy'",
+        "Systems: 'More systems overall - more switches, more instruments, more controls, more monitoring required. Not harder - just more. Requires discipline and systematic approach'",
+        "Rewards: 'Why all this complexity? Because Baron can: fly IFR in weather, cruise at 200 knots, carry 6 people, fly high above weather, operate professionally. Capability requires complexity'",
+        "Learning: 'Don't be overwhelmed. You learn systematically: First understand systems (Module 1), then fly normally (Module 2), then handle emergencies (Module 3). Step by step, you will master this aircraft'",
+        "Ask: 'Questions about any systems or overall Baron complexity?'",
+        "Next: 'Let's debrief this tour'"
+      ],
+      "goals": [
+        "Twin engines summarized",
+        "Constant-speed props recapped",
+        "Dual electrical noted",
+        "Fuel complexity mentioned",
+        "Retractable gear emphasized",
+        "De-ice systems recapped",
+        "Autopilot mentioned",
+        "Performance capabilities noted",
+        "Complexity vs capability balance explained",
+        "Learning path reassured",
+        "Ready for debrief"
+      ]
+    },
+    {
+      "name": "Debrief",
+      "prompt": "Debrief cockpit familiarization, celebrate, preview next challenge.",
+      "steps": [
+        "Complete: 'Challenge 1.1 - Cockpit Familiarization complete!'",
+        "Review: 'Today you toured entire Baron 58 cockpit: Primary flight instruments, engine instruments (doubles!), avionics panel, instrument sub-panel with all switches, throttle quadrant with six levers and trim wheels, copilot instruments, autopilot system, overall systems summary'",
+        "Complexity: 'Baron is significantly more complex than C172: Two engines with independent controls, constant-speed props, retractable gear, dual electrical, extensive de-ice, advanced autopilot, more systems everywhere. This is professional-level aircraft'",
+        "Don't memorize: 'You don't need to memorize everything today. This was introduction to layout and complexity. As we progress through course, each system will become familiar through use. Today's goal: understand where everything is and what Baron offers'",
+        "Next challenge: 'Challenge 1.2 - Systems Deep Dive. We will explore each major system in detail: electrical system, fuel system, engine controls, environmental systems. Understanding HOW systems work, not just WHERE they are'",
+        "Module 1: 'You have completed Challenge 1.1 of Module 1 (Systems and Familiarization). Module 1 has 4 challenges total: 1.1 Cockpit Familiarization ✓, 1.2 Systems Deep Dive (next), 1.3 Ground Operations, 1.4 First Flight Supervised'",
+        "Progress: 'Course progress: 1/11 challenges complete - 9%. Just beginning this journey!'",
+        "Celebrate: 'Well done touring this complex cockpit! The Baron is impressive aircraft and you are on path to mastering it'",
+        "Questions: 'Any questions about today's tour or the Baron in general?'",
+        "Preview: 'Next session: Systems Deep Dive. We will learn electrical system (how dual alternators work), fuel system (tank selection and management), engine controls (throttle-prop-mixture coordination), and environmental systems (heating, cooling, de-ice). Get ready for deeper understanding!'",
+        "Encourage: 'Take your time reviewing notes. The Baron has a lot going on, but every professional pilot who flies it learned it systematically just like you are doing. You will master this aircraft!'"
+      ],
+      "goals": [
+        "Challenge completion celebrated",
+        "Coverage summarized",
+        "Complexity vs C172 recapped",
+        "Memorization pressure removed",
+        "Next challenge previewed (Systems Deep Dive)",
+        "Module 1 progress noted (1/4)",
+        "Course progress noted (1/11)",
+        "Student encouraged",
+        "Ready for next challenge"
+      ]
+    }
+  ]
+}
